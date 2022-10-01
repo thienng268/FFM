@@ -6,11 +6,10 @@
         Width="1080"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        Style="{StaticResource WinAll}"
+        WindowStyle="None"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         AllowsTransparency="True"
         Background="{x:Null}">
-
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -23,9 +22,11 @@
             <RowDefinition Height="60*"/>
             <RowDefinition Height="383*"/>
         </Grid.RowDefinitions>
-        <materialDesign:Card UniformCornerRadius="20" materialDesign:ShadowAssist.ShadowDepth="Depth2" Background="#FFF9F5" Margin="25,25,25,25" Grid.RowSpan="4" Grid.ColumnSpan="2">
+        <!--Background + Ảnh-->
+        <materialDesign:Card UniformCornerRadius="20" materialDesign:ShadowAssist.ShadowDepth="Depth2"  Background="#FFF9F5" Margin="25,25,25,25" Grid.RowSpan="4" Grid.ColumnSpan="2">
             <Image Source="/IMAGE/LOGIN.png" Margin="500,23,-2,11"/>
         </materialDesign:Card>
+        <!--Panel Menu-->
         <Border CornerRadius="15" Margin="79,78,52,78" Grid.RowSpan="4">
             <Border.Background>
                 <LinearGradientBrush>
@@ -34,27 +35,29 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
+       
         <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="35" Margin="112,98,528,-101" Grid.RowSpan="4" Grid.ColumnSpan="2"><Run Text="PHẦN MỀM "/><LineBreak/><Run Text="QUẢN LÝ BÁN HÀNG"/></TextBlock>
         <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="20" Margin="112,11,-112,-222" Text="EMAIL:" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <TextBox Margin="112,45,84,334" x:Name="txtEmail" FontSize="20" FontFamily="{StaticResource mainFont}"
                  materialDesign:HintAssist.Hint="Email" BorderThickness="1" Background="#FFFFFF"
                  BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignOutlinedTextBox}" Grid.Row="2" Grid.RowSpan="2"/>
         <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="20" Margin="112,79,-112,-350" Text="MẬT KHẨU:" Grid.Row="3" Grid.ColumnSpan="2"/>
-        <TextBox Margin="112,115,84,204" x:Name="txtMK" FontSize="20" FontFamily="{StaticResource mainFont}"
+        <TextBox Margin="112,115,84,204" x:Name="txtPass" FontSize="20" FontFamily="{StaticResource mainFont}"
                  materialDesign:HintAssist.Hint="Mật khẩu" BorderThickness="1" Background="#FFFFFF"
                  BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignOutlinedTextBox}" Grid.Row="3"/>
+        
         <Button x:Name="loginBtn" Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
                 Height="60" BorderBrush="#F87D32"
-                Background="#F87D32" FontSize="20" Content="ĐĂNG NHẬP" FontFamily="{StaticResource boldFont}" Margin="112,202,85,121" Grid.Row="3"/>
+                Background="#F87D32" FontSize="20" Content="ĐĂNG NHẬP" FontFamily="{StaticResource boldFont}" Margin="112,202,81,121" Grid.Row="3"/>
 
         <Button Margin="-121,254,121,79" x:Name="signupBtn" Style="{StaticResource MaterialDesignFlatButton}"
                  materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
-                Height="50" FontSize="16" Content="ĐĂNG KÝ" FontFamily="{StaticResource boldFont}" Foreground="#FFFFFF" Grid.Row="3" RenderTransformOrigin="0.315,-0.213"/>
+                Height="30" Width="120" FontSize="16" Content="ĐĂNG KÝ" FontFamily="{StaticResource boldFont}" Foreground="#FFFFFF" Grid.Row="3" RenderTransformOrigin="0.315,-0.213"/>
 
         <Button x:Name="forgotpassBtn" Style="{StaticResource MaterialDesignFlatButton}"
                  materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
-                Height="50" FontSize="16" Content="QUÊN MẬT KHẨU" FontFamily="{StaticResource boldFont}" Foreground="#FFFFFF" Grid.Row="3" RenderTransformOrigin="0.315,-0.213" Grid.ColumnSpan="2" Margin="118,253,415,80"/>
+                Height="30" Width="180" FontSize="16" Content="QUÊN MẬT KHẨU" FontFamily="{StaticResource boldFont}" Foreground="#FFFFFF" Grid.Row="3" RenderTransformOrigin="0.315,-0.213" Grid.ColumnSpan="2" Margin="118,253,415,80" Click="ForgotPass_Click"/>
 
     </Grid>
 </Window>

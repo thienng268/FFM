@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace FastfoodManagementFinal
 {
     /// <summary>
-    /// Interaction logic for LoginWindow.xaml
+    /// Interaction logic for ForgotPass.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class ForgotPass : Window
     {
-
-        public LoginWindow()
+        public ForgotPass()
         {
             InitializeComponent();
-
-        }
-
-        private void ForgotPass_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
