@@ -4,8 +4,10 @@
              xmlns:local="clr-namespace:FastfoodManagementFinal"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-    <ResourceDictionary>
-      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary>
+            <FontFamily x:Key="mainFont">/FastfoodManagement;component/Font/DesignerVN-Poppins-Regular.ttf#DVN-Poppins</FontFamily>
+            <FontFamily x:Key="boldFont">/FastfoodManagement;component/Font/DesignerVN-Poppins-ExtraBold.ttf#DVN-Poppins</FontFamily>
+            <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
         <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
         <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
@@ -13,5 +15,6 @@
         <ResourceDictionary Source="/ResourceXAML/MainResource.xaml"></ResourceDictionary>
       </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>
+        
   </Application.Resources>
 </Application>

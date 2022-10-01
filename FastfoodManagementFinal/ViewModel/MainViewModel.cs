@@ -10,10 +10,16 @@ namespace FastfoodManagementFinal.ViewModel
 {
     public class MainViewModel : BaseViewModel 
     {
+        public bool Isloaded = false;
         // mọi thứ xử lý nằm trong này
         public MainViewModel()
         {
-            
+            if (!Isloaded)
+            {
+                Isloaded = true;
+                LoginWindow loginWindow = new LoginWindow();
+                loginWindow.ShowDialog();
+            }
         }
     }
 }
