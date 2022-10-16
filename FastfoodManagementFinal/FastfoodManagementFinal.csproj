@@ -92,6 +92,7 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DataProvider.cs" />
+    <Compile Include="Models\FASTFOODMANAGEMENTSEntities.cs" />
     <Compile Include="Models\INGREDIENTSTORAGE.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
