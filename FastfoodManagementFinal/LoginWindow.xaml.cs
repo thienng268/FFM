@@ -28,7 +28,16 @@ namespace FastfoodManagementFinal
 
         private void ForgotPass_Click(object sender, RoutedEventArgs e)
         {
+            ForgotPass Forgotpass = new ForgotPass();
+            Forgotpass.Show(); 
+            this.Hide();
+        }
 
+        private void SignUp_Click(object sender, RoutedEventArgs e)
+        {
+            SignUp Signup = new SignUp();
+            Signup.Show();
+            this.Hide();
         }
     }
 }

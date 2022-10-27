@@ -53,7 +53,7 @@
 
         <Button Margin="-121,254,121,79" x:Name="signupBtn" Style="{StaticResource MaterialDesignFlatButton}"
                  materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
-                Height="30" Width="120" FontSize="16" Content="ĐĂNG KÝ" FontFamily="{StaticResource boldFont}" Foreground="#FFFFFF" Grid.Row="3" RenderTransformOrigin="0.315,-0.213"/>
+                Height="30" Width="120" FontSize="16" Content="ĐĂNG KÝ" FontFamily="{StaticResource boldFont}" Foreground="#FFFFFF" Grid.Row="3" RenderTransformOrigin="0.315,-0.213" Click="SignUp_Click"/>
 
         <Button x:Name="forgotpassBtn" Style="{StaticResource MaterialDesignFlatButton}"
                  materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"

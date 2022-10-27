@@ -10,7 +10,7 @@
         Width="500"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        Style="{StaticResource WinAll}"
+        WindowStyle="None"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         AllowsTransparency="True"
         Background="{x:Null}">
