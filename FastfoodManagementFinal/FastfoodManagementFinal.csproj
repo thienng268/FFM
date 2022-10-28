@@ -79,6 +79,9 @@
     <Compile Include="ForgotPass.xaml.cs">
       <DependentUpon>ForgotPass.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InfoCustomer.xaml.cs">
+      <DependentUpon>InfoCustomer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
@@ -129,6 +132,10 @@
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Page Include="ForgotPass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InfoCustomer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
