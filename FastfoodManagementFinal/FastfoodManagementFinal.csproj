@@ -213,6 +213,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="IMAGE\x-mark-5-128.png" />
+    <Resource Include="IMAGE\x-mark-128.png" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>

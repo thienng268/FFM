@@ -17,12 +17,13 @@
     <Grid>
         <materialDesign:Card UniformCornerRadius="7" materialDesign:ShadowAssist.ShadowDepth="Depth2"  Background="#F8FAFF" Margin="25,25,25,58">
             <Button HorizontalAlignment="Left" Margin="421,6,0,0" VerticalAlignment="Top" Height="23" Width="24" BorderBrush="#00711B1B">
-                <Button.Background> 
-                    <ImageBrush ImageSource="IMAGE/x-mark-5-128.png"/>
+                <Button.Background>
+                    <ImageBrush ImageSource="IMAGE/x-mark-128.png"/>
                 </Button.Background>
                 <Button Content="Button"/>
             </Button>
         </materialDesign:Card>
+        <Image Source="/IMAGE/Asset 3.png" Margin="45,102,335,152"/>
         <!--Mã SP-->
         <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="26" Text="THÊM SẢN PHẨM" Margin="192,35,0,0"/>
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="193,80,-193,-291" Text="Mã sản phẩm"/>
