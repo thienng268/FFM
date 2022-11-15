@@ -14,21 +14,12 @@ namespace FastfoodManagementFinal.Models
     
     public partial class PRODUCTS
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PRODUCTS()
-        {
-            this.ORDERS = new HashSet<ORDERS>();
-        }
-    
         public string ProductID { get; set; }
         public string ProductName { get; set; }
         public string ProductType { get; set; }
-        public Nullable<int> ProductPrice { get; set; }
+        public int ProductPrice { get; set; }
+        public short Stock { get; set; }
         public string Descriptions { get; set; }
-        public Nullable<short> Stock { get; set; }
         public byte[] ProductImage { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ORDERS> ORDERS { get; set; }
     }
 }

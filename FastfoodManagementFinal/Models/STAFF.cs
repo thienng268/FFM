@@ -14,30 +14,14 @@ namespace FastfoodManagementFinal.Models
     
     public partial class STAFF
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public STAFF()
-        {
-            this.ACCOUNT = new HashSet<ACCOUNT>();
-            this.BILL = new HashSet<BILL>();
-            this.ORDERS = new HashSet<ORDERS>();
-        }
-    
         public string ID { get; set; }
         public string FullName { get; set; }
-        public System.DateTime DoB { get; set; }
         public string Sex { get; set; }
-        public string Addr { get; set; }
+        public string DoB { get; set; }
+        public string Position { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
+        public string Addr { get; set; }
         public byte[] Avatar { get; set; }
-        public int IDPersonal { get; set; }
-        public Nullable<int> stt { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ACCOUNT> ACCOUNT { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BILL> BILL { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ORDERS> ORDERS { get; set; }
     }
 }

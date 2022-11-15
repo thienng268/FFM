@@ -12,12 +12,13 @@ namespace FastfoodManagementFinal.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class INGREDIENTSTORAGE
+    public partial class IMPORT
     {
-        public string IngID { get; set; }
-        public string IngName { get; set; }
-        public Nullable<int> Quantity { get; set; }
-        public Nullable<int> IngStatus { get; set; }
-        public Nullable<System.DateTime> AddDate { get; set; }
+        public string TicketID { get; set; }
+        public string AdminID { get; set; }
+        public string ImportDate { get; set; }
+        public string Name { get; set; }
+        public int UnitPrice { get; set; }
+        public int Quantity { get; set; }
     }
 }

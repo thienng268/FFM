@@ -15,12 +15,13 @@ namespace FastfoodManagementFinal.Models
     public partial class BILL
     {
         public int BillNumber { get; set; }
-        public System.DateTime BillDate { get; set; }
-        public Nullable<int> Total { get; set; }
-        public string BillID { get; set; }
+        public string BillDate { get; set; }
+        public int Total { get; set; }
+        public string OrderID { get; set; }
         public string StaffID { get; set; }
+        public string CustomerID { get; set; }
+        public Nullable<double> Discount { get; set; }
     
         public virtual ORDERS ORDERS { get; set; }
-        public virtual STAFF STAFF { get; set; }
     }
 }

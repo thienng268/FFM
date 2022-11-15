@@ -16,9 +16,12 @@ namespace FastfoodManagementFinal.Models
     {
         public string UserName { get; set; }
         public string Pass { get; set; }
-        public string ID { get; set; }
-        public int AccType { get; set; }
-    
-        public virtual STAFF STAFF { get; set; }
+        public string FullName { get; set; }
+        public string Sex { get; set; }
+        public string DoB { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+        public string Addr { get; set; }
+        public int Auth { get; set; }
     }
 }
