@@ -31,8 +31,8 @@
                 <Button Content="Button"/>
             </Button>
         </materialDesign:Card>
-        <!--Mã SP-->
         <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="34" Text="THÔNG TIN KHÁCH HÀNG" Margin="45,46,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <!--Mã SP-->
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Margin="46,30,-46,-318" Text="Mã khách hàng" Grid.Row="1" Grid.ColumnSpan="2"/>
         <TextBox x:Name="txtĐK_TK" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF"
                  BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="45,58,130,430" Grid.Row="1"/>
@@ -48,21 +48,26 @@
 
         <TextBox x:Name="txtĐK_TK_Copy" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF"
             BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="272,58,47,431" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <!--Giới tính-->
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Margin="45,114,-45,-402" Text="Giới tính" Grid.Row="1" Grid.ColumnSpan="2"/>
         <TextBox x:Name="txtĐK_TK_Copy1" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF"
             BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="44,142,131,346" Grid.Row="1"/>
+        <!--SĐT-->
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Margin="272,114,-272,-402" Text="Số điện thoại" Grid.Row="1" Grid.ColumnSpan="2"/>
         <TextBox x:Name="txtĐK_TK_Copy2" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF"
             BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="271,142,48,346" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <!--Doanh số-->
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Margin="45,197,-45,-485" Text="Doanh số" Grid.Row="1" Grid.ColumnSpan="2"/>
         <TextBox x:Name="txtĐK_TK_Copy3" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF"
-            BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="44,225,131,263" Grid.Row="1"/>
+            BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="44,225,131,263" Grid.Row="1" TextChanged="txtĐK_TK_Copy3_TextChanged"/>
+        <!--Cấp bậc-->
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Margin="272,197,-272,-485" Text="Cấp bậc" Grid.Row="1" Grid.ColumnSpan="2"/>
         <TextBox x:Name="txtĐK_TK_Copy4" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF"
             BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="271,225,48,263" Grid.Row="1" Grid.ColumnSpan="2"/>
         <Button x:Name="loginBtn" Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0" BorderBrush="#F87D32"
                 Background="#FF6633" FontSize="18" Content="CẬP NHẬT" FontFamily="{StaticResource boldFont}" Margin="184,410,40,78" Grid.Row="1"/>
+        <!--ĐC-->
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Margin="45,279,-45,-567" Text="Địa chỉ" Grid.Row="1" Grid.ColumnSpan="2"/>
         <TextBox x:Name="txtĐK_TK_Copy5" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF"
             BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="44,307,48,134" Grid.Row="1" Grid.ColumnSpan="2"/>

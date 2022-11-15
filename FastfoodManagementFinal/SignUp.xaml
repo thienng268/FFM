@@ -29,7 +29,7 @@
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="195,80,-195,-291" Text="Tên đăng nhập"/>
         <TextBox x:Name="txtĐK_TK" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF" 
                  Height="25"
-                 BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="195,105,182,260"/>
+                 BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="195,105,182,260" CaretBrush="#FFFF6633" SelectionBrush="#FFFF6633"/>
         <!--MK-->
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="339,80,-339,-291" Text="Mật khẩu"/>
         <TextBox x:Name="txtĐK_Pass" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF" 

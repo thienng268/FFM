@@ -10,23 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace FastfoodManagementFinal
 {
     /// <summary>
-    /// Interaction logic for InfoCustomer.xaml
+    /// Interaction logic for MenuButton.xaml
     /// </summary>
-    public partial class InfoCustomer : Window
+    public partial class MenuButton : UserControl
     {
-        public InfoCustomer()
+        public MenuButton()
         {
             InitializeComponent();
-        }
-
-        private void txtĐK_TK_Copy3_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }
