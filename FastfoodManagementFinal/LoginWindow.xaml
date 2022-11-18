@@ -26,7 +26,7 @@
         <materialDesign:Card UniformCornerRadius="20" materialDesign:ShadowAssist.ShadowDepth="Depth2"  Background="#FFF9F5" Margin="25,25,25,25" Grid.RowSpan="4" Grid.ColumnSpan="2">
             <Image Source="/IMAGE/LOGIN.png" Margin="500,23,-2,11"/>
         </materialDesign:Card>
-        <Button HorizontalAlignment="Left" Margin="467,34,0,0" VerticalAlignment="Top" Height="31" Width="32" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1">
+        <Button  HorizontalAlignment="Left" Margin="467,34,0,0" VerticalAlignment="Top" Height="31" Width="32" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1">
             <Button.Background>
                 <ImageBrush ImageSource="IMAGE/x-mark-128.png"/>
             </Button.Background>
@@ -55,7 +55,7 @@
         <Button x:Name="loginBtn" Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
                 Height="60" BorderBrush="#F87D32"
-                Background="#F87D32" FontSize="20" Content="ĐĂNG NHẬP" FontFamily="{StaticResource boldFont}" Margin="112,202,81,121" Grid.Row="3"/>
+                Background="#F87D32" FontSize="20" Content="ĐĂNG NHẬP" FontFamily="{StaticResource boldFont}" Margin="112,202,81,121" Grid.Row="3" Click="loginBtn_Click"/>
 
         <Button Margin="-121,254,121,79" x:Name="signupBtn" Style="{StaticResource MaterialDesignFlatButton}"
                  materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"

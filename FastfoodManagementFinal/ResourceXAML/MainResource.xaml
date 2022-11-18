@@ -3,5 +3,6 @@
                     xmlns:viewmodel="clr-namespace:FastfoodManagementFinal.ViewModel"
                     xmlns:local="clr-namespace:FastfoodManagementFinal.ResourceXAML">
     <viewmodel:MainViewModel x:Key="MainVM"></viewmodel:MainViewModel>
+    
 
 </ResourceDictionary> 
