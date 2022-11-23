@@ -13,6 +13,7 @@ namespace FastfoodManagementFinal
         //http://materialdesigninxaml.net/home
         public MainWindow()
         {
+            this.
             InitializeComponent();
         }
 
