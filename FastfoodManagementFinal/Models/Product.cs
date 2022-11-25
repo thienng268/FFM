@@ -9,10 +9,10 @@ namespace FastfoodManagementFinal.Models
 {
     public class Product
     {
-        public Product(int type_of_constructor)
-        {
+        //public Product(int type_of_constructor)
+        //{
 
-        }
+        //}
         // load từ dưới database lên
         //public Product(string ProductId, string name, int price, string product_Type, int remaining_quantity, string avatar)
         //{
@@ -32,6 +32,7 @@ namespace FastfoodManagementFinal.Models
         public int Price { get; set; }
         public string Product_Type { get; set; }
         public int Remaining_quantity { get; set; }
+        public string description { get; set; }
         public string Avatar { get; set; }
     }
 }

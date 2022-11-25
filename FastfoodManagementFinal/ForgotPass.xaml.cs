@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FastfoodManagementFinal.Models;
+using FastfoodManagementFinal.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -23,6 +25,8 @@ namespace FastfoodManagementFinal
         public ForgotPass()
         {
             InitializeComponent();
+
         }
+
     }
 }
