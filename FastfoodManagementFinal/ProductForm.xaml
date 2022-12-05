@@ -18,11 +18,11 @@
         <!--Bộ lọc-->
         <TextBlock Foreground="#3C4048" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Bộ lọc" Margin="52,76,684,524" RenderTransformOrigin="0.845,0.596"/>
         <ComboBox
-    x:Name="BoLocComboBox" FontFamily="{StaticResource boldFont}" Foreground="Black" BorderBrush="#B2B2B2" Background="#FFFFFF"
+    x:Name="BoLocComboBox" FontFamily="{StaticResource boldFont}" Foreground="Black" BorderThickness="1.5" BorderBrush="#C6C7E0" Background="#FFFFFF"
  
     IsEnabled="{Binding IsChecked, ElementName=OutlinedComboBoxEnabledCheckBox}"
     ItemsSource="{Binding ShortStringList}"
-    Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="49,100,605,0" VerticalAlignment="Top" Height="51" >
+    Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="49,100,605,0" VerticalAlignment="Top" Height="48" >
             <ComboBoxItem Content="Tất cả"/>
             <ComboBoxItem Content="Burger"/>
             <ComboBoxItem Content="Cơm - Mỳ ý"/>
@@ -36,23 +36,23 @@
         <!--Sắp xếp-->
         <TextBlock Foreground="#3C4048" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Sắp xếp" Margin="226,76,485,523" RenderTransformOrigin="0.845,0.596"/>
         <ComboBox
-    x:Name="SapXepComboBox" FontFamily="{StaticResource boldFont}" BorderBrush="#B2B2B2" Background="#FFFFFF"
+    x:Name="SapXepComboBox" FontFamily="{StaticResource boldFont}" BorderThickness="1.5" BorderBrush="#C6C7E0" Background="#FFFFFF"
  
     IsEnabled="{Binding IsChecked, ElementName=OutlinedComboBoxEnabledCheckBox}"
     ItemsSource="{Binding ShortStringList}"
-    Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="222,100,489,0" VerticalAlignment="Top" Height="52" />
+    Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="222,100,489,0" VerticalAlignment="Top" Height="48" />
 
         <!--Tìm kiếm-->
         <TextBlock Foreground="#3C4048" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="349,76,365,525" RenderTransformOrigin="0.845,0.596"/>
 
-        <TextBox Margin="345,100,203,468" x:Name="txtEmail" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" Background="#FFFFFF"
-                 BorderBrush="#B2B2B2" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
-        <Image Source="/IMAGE/search-13-48.png" Margin="573,115,217,480" />
+        <TextBox Margin="345,100,203,472" x:Name="txtEmail" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1.5" Background="#FFFFFF"
+                 BorderBrush="#C6C7E0" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+        <Image Source="/IMAGE/search-13-128.png" Margin="572,112,218,483" />
 
         <Button x:Name="loginBtn" Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
-                Height="53" BorderBrush="#EA5C2B"
-                Background="#EA5C2B" FontSize="14" Content="THÊM" FontFamily="{StaticResource boldFont}" Margin="640,98,62,468"/>
+                Height="48" BorderBrush="#EA5C2B"
+                Background="#EA5C2B" FontSize="14" Content="THÊM" FontFamily="{StaticResource boldFont}" Margin="640,100,62,472"/>
 
 
 

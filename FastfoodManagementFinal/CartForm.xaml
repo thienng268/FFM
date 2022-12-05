@@ -18,7 +18,7 @@
         <!--Bộ lọc-->
         <TextBlock Foreground="#3C4048" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Bộ lọc" Margin="52,76,667,524" RenderTransformOrigin="0.845,0.596"/>
         <ComboBox
-    x:Name="BoLocComboBox" FontFamily="{StaticResource boldFont}" Foreground="Black" BorderBrush="#B2B2B2" Background="#FFFFFF"
+    x:Name="BoLocComboBox" FontFamily="{StaticResource boldFont}" Foreground="Black" BorderThickness="1.5" BorderBrush="#C6C7E0" Background="#FFFFFF"
  
     IsEnabled="{Binding IsChecked, ElementName=OutlinedComboBoxEnabledCheckBox}"
     ItemsSource="{Binding ShortStringList}"
@@ -32,9 +32,9 @@
         <!--Tìm kiếm-->
         <TextBlock Foreground="#3C4048" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="263,76,437,525" RenderTransformOrigin="0.845,0.596"/>
 
-        <TextBox Margin="259,100,289,468" x:Name="txtEmail" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" Background="#FFFFFF"
-                 BorderBrush="#B2B2B2" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
-        <Image Source="/IMAGE/search-13-128.png" Margin="487,113,303,482" RenderTransformOrigin="-3.333,0.467" />
+        <TextBox Margin="259,100,289,468" x:Name="txtEmail" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1.5" Background="#FFFFFF"
+                 BorderBrush="#C6C7E0" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+        <Image Source="/IMAGE/search-13-48.png" Margin="487,113,303,482" RenderTransformOrigin="-3.333,0.467" />
 
         <Button x:Name="loginBtn" Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
