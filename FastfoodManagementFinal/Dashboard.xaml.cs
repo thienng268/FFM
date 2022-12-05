@@ -25,16 +25,14 @@ namespace FastfoodManagementFinal
             PagesNavigation.Navigate(new System.Uri("HomeForm.xaml", UriKind.RelativeOrAbsolute));
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            PagesNavigation.Navigate(new System.Uri("HomeForm.xaml", UriKind.RelativeOrAbsolute));
-
-        }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             PagesNavigation.Navigate(new System.Uri("ProductForm.xaml", UriKind.RelativeOrAbsolute));
+        }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            PagesNavigation.Navigate(new System.Uri("HomeForm.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }

@@ -17,114 +17,123 @@
         Background="{x:Null}">
 
     <Grid>
-        <materialDesign:Card UniformCornerRadius="13" materialDesign:ShadowAssist.ShadowDepth="Depth3"  Background="#F8FAFF" Margin="25,25,25,25" Grid.RowSpan="4" Grid.ColumnSpan="2">
 
-            <Grid>
-                <!--Dashboard-->
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="239"/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0"/>
-                </Grid.ColumnDefinitions>
+        <!--Dashboard-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="239"/>
+            <ColumnDefinition Width="198*"/>
+            <ColumnDefinition Width="281*"/>
+            <ColumnDefinition Width="62*"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
 
-                <Border CornerRadius="15" Margin="20,20,6,20">
-                    <Border.Background>
-                        <LinearGradientBrush>
-                            <GradientStop Color="#F87D32" Offset="0"/>
-                            <GradientStop Color="#FDA65D" Offset="0.8"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
-                </Border>
+        <Border CornerRadius="15" Margin="7,3,2,1" Grid.ColumnSpan="5">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#F87D32" Offset="0"/>
+                    <GradientStop Color="#FDA65D" Offset="0.8"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
 
-                <Border CornerRadius="15" Margin="54,48,15,524">
-                    <Border.Background>
-                        <LinearGradientBrush>
-                            <GradientStop Color="White" Offset="0"/>
-                            <GradientStop Color="White" Offset="0.7"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
-                </Border>
+        <Border CornerRadius="15" Margin="60,54,9,560">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.7"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
 
-                <Image Source="/IMAGE/Asset 1.png" Margin="6,45,127,523" />
+        <Border CornerRadius="15" Margin="2,13,0,12" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Width="825">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#F8FAFF" Offset="0"/>
+                    <GradientStop Color="#F8FAFF" Offset="0.7"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
 
-                <TextBlock Foreground="#F87D32" FontFamily="{StaticResource boldFont}" FontSize="20" Text="Thanh Hiền" Margin="95,52,10,545" RenderTransformOrigin="0.845,0.596"/>
-                <TextBlock Foreground="#F87D32" FontFamily="{StaticResource boldFont}" FontSize="13" Text="Nhân Viên" Margin="95,80,68,534" RenderTransformOrigin="0.845,0.596"/>
-                <Border>
-                    <Frame x:Name="PagesNavigation" NavigationUIVisibility='Hidden' Margin="285,25,-751,30">
+        <Image Source="/IMAGE/Hiền.png" Margin="14,45,138,553" />
 
-                    </Frame>
-                </Border>
-                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
-                            Width="195" materialDesign:RippleAssist.Feedback="White" Margin="35,146,0,452" HorizontalAlignment="Left" Click="Button_Click">
-                    <WrapPanel Width="170">
-                        <Image Source="/IMAGE/home-4-256.png"/>
-                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Trang chủ" RenderTransformOrigin="0.906,0.449" Height="22"/>
-                    </WrapPanel>
-                </Button>
+        <TextBlock Foreground="#F87D32" FontFamily="{StaticResource boldFont}" FontSize="20" Text="Thanh Hiền" Margin="101,60,4,537" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#F87D32" FontFamily="{StaticResource boldFont}" FontSize="13" Text="Nhân Viên" Margin="103,88,60,526" RenderTransformOrigin="0.845,0.596"/>
 
-                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
-                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,202,9,396" Click="Button_Click_1">
-                    <WrapPanel Width="170">
-                        <Image Source="/IMAGE/restaurant-3-256.png"/>
-                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Sản phẩm" RenderTransformOrigin="0.906,0.449" Height="22"/>
-                    </WrapPanel>
-                </Button>
+        <Border>
+            <Frame x:Name="PagesNavigation" NavigationUIVisibility='Hidden' Margin="261,25,-812,30">
 
-                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
-                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,256,9,342">
-                    <WrapPanel Width="170">
-                        <Image Source="/IMAGE/buy-256.png"/>
-                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Đơn hàng" RenderTransformOrigin="0.906,0.449" Height="22"/>
-                    </WrapPanel>
-                </Button>
+            </Frame>
+        </Border>
 
-                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
-                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,310,9,288">
-                    <WrapPanel Width="170">
-                        <Image Source="/IMAGE/group-256.png"/>
-                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Khách hàng" RenderTransformOrigin="0.906,0.449" Height="22"/>
-                    </WrapPanel>
-                </Button>
+        <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6" materialDesign:RippleAssist.Feedback="White" Margin="35,171,9,477" Click="Button_Click_2">
+            <WrapPanel Width="170">
+                <Image Source="/IMAGE/home-4-256.png"/>
+                <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Trang chủ" RenderTransformOrigin="0.906,0.449" Height="22"/>
+            </WrapPanel>
+        </Button>
 
-                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
-                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,364,9,234">
-                    <WrapPanel Width="170">
-                        <Image Source="/IMAGE/edit-user-512.png"/>
-                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Quản lý" RenderTransformOrigin="0.906,0.449" Height="22"/>
-                    </WrapPanel>
-                </Button>
+        <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,227,9,421" Click="Button_Click_1">
+            <WrapPanel Width="170">
+                <Image Source="/IMAGE/restaurant-3-256.png"/>
+                <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Sản phẩm" RenderTransformOrigin="0.906,0.449" Height="22"/>
+            </WrapPanel>
+        </Button>
 
-                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
-                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,420,9,178">
-                    <WrapPanel Width="170">
-                        <Image Source="/IMAGE/data-configuration-512.png"/>
-                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Thống kê" RenderTransformOrigin="0.906,0.449" Height="22"/>
-                    </WrapPanel>
-                </Button>
+        <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,281,9,367">
+            <WrapPanel Width="170">
+                <Image Source="/IMAGE/buy-256.png"/>
+                <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Đơn hàng" RenderTransformOrigin="0.906,0.449" Height="22"/>
+            </WrapPanel>
+        </Button>
 
-                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
-                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,480,9,118">
-                    <WrapPanel Width="170">
-                        <Image Source="/IMAGE/add-list-256.png"/>
-                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Nhập hàng" RenderTransformOrigin="0.906,0.449" Height="22"/>
-                    </WrapPanel>
-                </Button>
+        <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,335,9,313">
+            <WrapPanel Width="170">
+                <Image Source="/IMAGE/group-256.png"/>
+                <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Khách hàng" RenderTransformOrigin="0.906,0.449" Height="22"/>
+            </WrapPanel>
+        </Button>
 
-                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
-                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="17,566,27,32">
-                    <WrapPanel Width="170">
-                        <Image Source="/IMAGE/logout-512.png"/>
-                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Đăng xuất" RenderTransformOrigin="0.906,0.449" Height="22"/>
-                    </WrapPanel>
-                </Button>
+        <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,389,9,259">
+            <WrapPanel Width="170">
+                <Image Source="/IMAGE/edit-user-512.png"/>
+                <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Quản lý" RenderTransformOrigin="0.906,0.449" Height="22"/>
+            </WrapPanel>
+        </Button>
+
+        <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,445,9,203">
+            <WrapPanel Width="170">
+                <Image Source="/IMAGE/data-configuration-512.png"/>
+                <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Thống kê" RenderTransformOrigin="0.906,0.449" Height="22"/>
+            </WrapPanel>
+        </Button>
+
+        <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,505,9,143">
+            <WrapPanel Width="170">
+                <Image Source="/IMAGE/add-list-256.png"/>
+                <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Nhập hàng" RenderTransformOrigin="0.906,0.449" Height="22"/>
+            </WrapPanel>
+        </Button>
+
+        <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="17,591,27,57">
+            <WrapPanel Width="170">
+                <Image Source="/IMAGE/logout-512.png"/>
+                <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Đăng xuất" RenderTransformOrigin="0.906,0.449" Height="22"/>
+            </WrapPanel>
+        </Button>
 
 
 
 
-            </Grid>
 
-        </materialDesign:Card>
+
+
 
     </Grid>
 </Window>
