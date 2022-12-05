@@ -102,6 +102,9 @@
     <Compile Include="CartForm.xaml.cs">
       <DependentUpon>CartForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomerFormxaml.xaml.cs">
+      <DependentUpon>CustomerFormxaml.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.xaml.cs">
       <DependentUpon>Dashboard.xaml</DependentUpon>
     </Compile>
@@ -140,6 +143,10 @@
     <Compile Include="ViewModel\iSQL_command.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Page Include="CartForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomerFormxaml.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -89,7 +89,7 @@
         </Button>
 
         <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
-                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,335,9,313">
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,335,9,313" Click="Button_Click_3">
             <WrapPanel Width="170">
                 <Image Source="/IMAGE/group-256.png"/>
                 <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Khách hàng" RenderTransformOrigin="0.906,0.449" Height="22"/>

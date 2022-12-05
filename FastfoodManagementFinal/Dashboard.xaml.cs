@@ -39,5 +39,10 @@ namespace FastfoodManagementFinal
         {
             PagesNavigation.Navigate(new System.Uri("CartForm.xaml", UriKind.RelativeOrAbsolute));
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            PagesNavigation.Navigate(new System.Uri("CustomerFormxaml.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 }
