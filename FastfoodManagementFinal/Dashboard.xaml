@@ -30,7 +30,7 @@
         <Border CornerRadius="15" Margin="7,3,2,1" Grid.ColumnSpan="5">
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="#F87D32" Offset="0"/>
+                    <GradientStop Color="#FF9F45" Offset="0"/>
                     <GradientStop Color="#FDA65D" Offset="0.8"/>
                 </LinearGradientBrush>
             </Border.Background>
@@ -81,7 +81,7 @@
         </Button>
 
         <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
-                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,281,9,367">
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,281,9,367" Click="Button_Click">
             <WrapPanel Width="170">
                 <Image Source="/IMAGE/buy-256.png"/>
                 <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Đơn hàng" RenderTransformOrigin="0.906,0.449" Height="22"/>
