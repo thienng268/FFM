@@ -7,17 +7,24 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FastfoodManagementFinal"
       mc:Ignorable="d" 
-      d:DesignHeight="620" d:DesignWidth="805"
+      d:DesignHeight="620" d:DesignWidth="807"
       Title="Home_Form">
 
     <Grid>
 
-        <TextBlock Foreground="#C6C7E0" FontFamily="{StaticResource boldFont}" FontSize="45" Text="TRANG CHỦ" Margin="34,16,490,535" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#C6C7E0" FontFamily="{StaticResource boldFont}" FontSize="45" Text="TRANG CHỦ" Margin="39,16,249,542" RenderTransformOrigin="0.845,0.596"/>
         <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="45" Text="TRANG CHỦ" Margin="38,18,474,538" RenderTransformOrigin="0.845,0.596"/>
 
+        <Image Source="/IMAGE/Số đơn bán ra.png" Margin="20,97,538,350" />
+        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="45" Text="0" Margin="172,173,594,385" RenderTransformOrigin="0.845,0.596"/>
 
-       
-   
+
+        <Image Source="/IMAGE/Doanh thu ngày.png" Margin="267,97,283,350" />
+        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="24" Text="0 VNĐ" Margin="401,196,329,389" RenderTransformOrigin="0.845,0.596"/>
+
+
+        <Image Source="/IMAGE/Sản phẩm bán.png" Margin="532,96,43,349" />
+        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="45" Text="0" Margin="678,174,80,384" RenderTransformOrigin="0.845,0.596"/>
 
 
     </Grid>
