@@ -17,6 +17,21 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,6 +68,9 @@
     <Reference Include="MaterialDesignThemes.Wpf, Version=4.6.1.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignThemes.4.6.1\lib\net462\MaterialDesignThemes.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
@@ -60,6 +78,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -78,8 +99,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Dashboard.xaml.cs">
+      <DependentUpon>Dashboard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ForgotPass.xaml.cs">
       <DependentUpon>ForgotPass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomeForm.xaml.cs">
+      <DependentUpon>HomeForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="InfoCustomer.xaml.cs">
       <DependentUpon>InfoCustomer.xaml</DependentUpon>
@@ -100,13 +127,24 @@
     <Compile Include="NewProduct.xaml.cs">
       <DependentUpon>NewProduct.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProductForm.xaml.cs">
+      <DependentUpon>ProductForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\iSQL_command.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Page Include="Dashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ForgotPass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomeForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -135,6 +173,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="NewProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProductForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -198,6 +240,57 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Datbase\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMAGE\add-list-256.png" />
+    <Resource Include="IMAGE\bank-2-256.png" />
+    <Resource Include="IMAGE\bulgogi burger.png" />
+    <Resource Include="IMAGE\buy-256.png" />
+    <Resource Include="IMAGE\calendar-10-32.png" />
+    <Resource Include="IMAGE\calendar-10-64.png" />
+    <Resource Include="IMAGE\cam.png" />
+    <Resource Include="IMAGE\chi tiết.png" />
+    <Resource Include="IMAGE\Cơm Gà Viên.png" />
+    <Resource Include="IMAGE\data-configuration-512.png" />
+    <Resource Include="IMAGE\edit-user-512.png" />
+    <Resource Include="IMAGE\Giá.png" />
+    <Resource Include="IMAGE\glass.png" />
+    <Resource Include="IMAGE\glass1.png" />
+    <Resource Include="IMAGE\group-256.png" />
+    <Resource Include="IMAGE\gà rán muối.png" />
+    <Resource Include="IMAGE\Gà Sốt HS.png" />
+    <Resource Include="IMAGE\Hiền.png" />
+    <Resource Include="IMAGE\home-4-256.png" />
+    <Resource Include="IMAGE\Hình Hiền.png" />
+    <Resource Include="IMAGE\hồng.png" />
+    <Resource Include="IMAGE\Khoai Tây Lắc.png" />
+    <Resource Include="IMAGE\logout-512.png" />
+    <Resource Include="IMAGE\minus-7-128.png" />
+    <Resource Include="IMAGE\Mực Rán Vòng.png" />
+    <Resource Include="IMAGE\Mỳ Ý bò bằm.png" />
+    <Resource Include="IMAGE\restaurant-3-256.png" />
+    <Resource Include="IMAGE\restaurant-3-512.png" />
+    <Resource Include="IMAGE\search-13-48.png" />
+    <Resource Include="IMAGE\sell-256.png" />
+    <Resource Include="IMAGE\settings-22-48.png" />
+    <Resource Include="IMAGE\shopping-bag-2-24.png" />
+    <Resource Include="IMAGE\shopping-bag-2-256.png" />
+    <Resource Include="IMAGE\tôm burger.png" />
+    <Resource Include="IMAGE\White ngang.png" />
+    <Resource Include="IMAGE\white.png" />
+    <Resource Include="IMAGE\đỏ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets')" />

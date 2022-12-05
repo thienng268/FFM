@@ -113,6 +113,16 @@ namespace FastfoodManagementFinal
 
         private void loginBtn_Click(object sender, RoutedEventArgs e)
         {
+            Dashboard dashboard = new Dashboard();
+            this.Hide();
+            dashboard.ShowDialog();
+            this.Show();
+            
+            
+            
+            
+            
+            
             //con.Open();
             //SqlCommand command = new SqlCommand("exec Login_check '" + txtEmail.Text + "','" + txtPass.Text + "'", con);
             //command.ExecuteNonQuery();

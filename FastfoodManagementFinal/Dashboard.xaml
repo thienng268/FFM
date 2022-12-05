@@ -1,0 +1,130 @@
+﻿<Window x:Class="FastfoodManagementFinal.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FastfoodManagementFinal"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        mc:Ignorable="d"
+        Height="680" 
+        Width="1080"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        AllowsTransparency="True"
+        Background="{x:Null}">
+
+    <Grid>
+        <materialDesign:Card UniformCornerRadius="13" materialDesign:ShadowAssist.ShadowDepth="Depth3"  Background="#F8FAFF" Margin="25,25,25,25" Grid.RowSpan="4" Grid.ColumnSpan="2">
+
+            <Grid>
+                <!--Dashboard-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="239"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0*"/>
+                    <ColumnDefinition Width="0"/>
+                </Grid.ColumnDefinitions>
+
+                <Border CornerRadius="15" Margin="20,20,6,20">
+                    <Border.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#F87D32" Offset="0"/>
+                            <GradientStop Color="#FDA65D" Offset="0.8"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                </Border>
+
+                <Border CornerRadius="15" Margin="54,48,15,524">
+                    <Border.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="White" Offset="0.7"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                </Border>
+
+                <Image Source="/IMAGE/Asset 1.png" Margin="6,45,127,523" />
+
+                <TextBlock Foreground="#F87D32" FontFamily="{StaticResource boldFont}" FontSize="20" Text="Thanh Hiền" Margin="95,52,10,545" RenderTransformOrigin="0.845,0.596"/>
+                <TextBlock Foreground="#F87D32" FontFamily="{StaticResource boldFont}" FontSize="13" Text="Nhân Viên" Margin="95,80,68,534" RenderTransformOrigin="0.845,0.596"/>
+                <Border>
+                    <Frame x:Name="PagesNavigation" NavigationUIVisibility='Hidden' Margin="285,25,-751,30">
+
+                    </Frame>
+                </Border>
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="195" materialDesign:RippleAssist.Feedback="White" Margin="35,146,0,452" HorizontalAlignment="Left" Click="Button_Click">
+                    <WrapPanel Width="170">
+                        <Image Source="/IMAGE/home-4-256.png"/>
+                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Trang chủ" RenderTransformOrigin="0.906,0.449" Height="22"/>
+                    </WrapPanel>
+                </Button>
+
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,202,9,396" Click="Button_Click_1">
+                    <WrapPanel Width="170">
+                        <Image Source="/IMAGE/restaurant-3-256.png"/>
+                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Sản phẩm" RenderTransformOrigin="0.906,0.449" Height="22"/>
+                    </WrapPanel>
+                </Button>
+
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,256,9,342">
+                    <WrapPanel Width="170">
+                        <Image Source="/IMAGE/buy-256.png"/>
+                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Đơn hàng" RenderTransformOrigin="0.906,0.449" Height="22"/>
+                    </WrapPanel>
+                </Button>
+
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,310,9,288">
+                    <WrapPanel Width="170">
+                        <Image Source="/IMAGE/group-256.png"/>
+                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Khách hàng" RenderTransformOrigin="0.906,0.449" Height="22"/>
+                    </WrapPanel>
+                </Button>
+
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,364,9,234">
+                    <WrapPanel Width="170">
+                        <Image Source="/IMAGE/edit-user-512.png"/>
+                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Quản lý" RenderTransformOrigin="0.906,0.449" Height="22"/>
+                    </WrapPanel>
+                </Button>
+
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,420,9,178">
+                    <WrapPanel Width="170">
+                        <Image Source="/IMAGE/data-configuration-512.png"/>
+                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Thống kê" RenderTransformOrigin="0.906,0.449" Height="22"/>
+                    </WrapPanel>
+                </Button>
+
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,480,9,118">
+                    <WrapPanel Width="170">
+                        <Image Source="/IMAGE/add-list-256.png"/>
+                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Nhập hàng" RenderTransformOrigin="0.906,0.449" Height="22"/>
+                    </WrapPanel>
+                </Button>
+
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="17,566,27,32">
+                    <WrapPanel Width="170">
+                        <Image Source="/IMAGE/logout-512.png"/>
+                        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Đăng xuất" RenderTransformOrigin="0.906,0.449" Height="22"/>
+                    </WrapPanel>
+                </Button>
+
+
+
+
+            </Grid>
+
+        </materialDesign:Card>
+
+    </Grid>
+</Window>
