@@ -23,35 +23,37 @@
         </Grid.ColumnDefinitions>
         <Image Source="/IMAGE/Cài đặt.png" Margin="35,-7,28,-2" Grid.ColumnSpan="2" />
         <Image Source="/IMAGE/Cài đặt2.png" Margin="64,63,57,140" Grid.ColumnSpan="2" />
+        <Image Source="/IMAGE/Thêm Ảnh.png" Margin="104,115,261,227" RenderTransformOrigin="0.606,0.649" />
+
 
         <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" FontSize="25" Text="CÀI ĐẶT" Margin="242,8,121,394" />
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="91,47,232,378" Text="THÔNG TIN CÁ NHÂN"/>
 
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="241,74,160,346" Text="Họ và tên"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="227,78,174,342" Text="Họ và tên"/>
         <TextBox Height="34" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="237,95,106,311" />
+                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="223,99,120,307" />
 
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="376,74,26,345" Text="Giới tính"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="362,78,40,341" Text="Giới tính"/>
         <TextBox Height="34"  FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="374,95,82,311" Grid.ColumnSpan="2" />
+                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="360,99,96,307" Grid.ColumnSpan="2" />
 
 
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="242,132,152,289" Text="Ngày sinh"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="228,136,166,285" Text="Ngày sinh"/>
         <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="237,153,106,253" />
+                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="223,157,120,249" />
 
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="376,132,56,289" Text="SĐT"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="362,136,70,285" Text="SĐT"/>
         <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="373,153,83,253" Grid.ColumnSpan="2" />
+                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="359,157,97,249" Grid.ColumnSpan="2" />
 
 
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="242,189,152,232" Text="Địa chỉ"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="228,193,166,228" Text="Địa chỉ"/>
         <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="237,210,106,196" />
+                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="223,214,120,192" />
 
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="376,189,50,232" Text="Email"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="362,193,64,228" Text="Email"/>
         <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="373,210,83,196" Grid.ColumnSpan="2" />
+                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="359,214,97,192" Grid.ColumnSpan="2" />
 
         <Button  Style="{StaticResource MaterialDesignFlatMidBgButton}" Height="24"
                 materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0" BorderBrush="#EA5C2B" Background="#EA5C2B" FontSize="9" Content="CẬP NHẬT" FontFamily="{StaticResource boldFont}" Margin="317,255,69,161"/>

@@ -17,6 +17,7 @@
     <Grid>
 
         <Image Source="/IMAGE/Đăng ký.png" />
+        <Image Source="/IMAGE/Thêm Ảnh.png" Margin="36,105,386,190" RenderTransformOrigin="0.606,0.649" />
 
 
         <!--Tên ĐN-->
