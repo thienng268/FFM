@@ -24,7 +24,7 @@
         <Image Source="/IMAGE/Đơn hàng.png" Margin="35,-7,28,-2" Grid.ColumnSpan="2" />
         <Image Source="/IMAGE/Đơn hàng2.png" Margin="64,51,57,152" Grid.ColumnSpan="2" />
 
-        <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="29" Text="ĐƠN HÀNG" Margin="216,13,82,372" />
+        <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" FontSize="29" Text="ĐƠN HÀNG" Margin="216,13,82,372" />
 
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="91,78,278,345" Text="Mã NV | Tên NV"/>

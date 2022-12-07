@@ -1,0 +1,55 @@
+﻿<Window x:Class="FastfoodManagementFinal.CreateHD"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FastfoodManagementFinal"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Height="440" 
+        Width="580"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        AllowsTransparency="True"
+        Background="{x:Null}">
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="468*"/>
+            <ColumnDefinition Width="113*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="/IMAGE/Đơn hàng.png" Margin="35,-7,28,-2" Grid.ColumnSpan="2" />
+        <Image Source="/IMAGE/Hóa đơn1.png" Margin="64,20,57,183" Grid.ColumnSpan="2" />
+
+        <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" FontSize="29" Text="HÓA ĐƠN" Margin="218,13,107,390" />
+
+
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="94,77,275,346" Text="Mã NV | Tên NV"/>
+        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
+                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="89,98,191,308" RenderTransformOrigin="1,0.5" />
+
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="316,77,27,343" Text="Mã KH | Họ tên KH"/>
+        <TextBox Height="34" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
+                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="312,98,81,308" Grid.ColumnSpan="2" />
+
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="94,135,308,286" Text="Thời gian"/>
+        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
+                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="89,156,219,250" />
+
+
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="315,135,108,286" Text="Số HD"/>
+        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
+                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="313,156,64,250" />
+
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="410,135,82,286" Text="Khuyến mãi" Grid.ColumnSpan="2"/>
+        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
+                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="410,156,80,250" Grid.ColumnSpan="2" />
+
+
+
+    </Grid>
+</Window>
+
