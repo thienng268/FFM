@@ -23,36 +23,36 @@
         <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Text="ĐĂNG KÝ" Margin="190,25,0,0" Width="152"/>
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="178,81,255,319" Text="Tên đăng nhập"/>
-        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
+        <TextBox x:Name="txtĐK_TK" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
                  Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="176,102,209,284" RenderTransformOrigin="1,0.5" />
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="355,81,78,319" Text="Mật khẩu"/>
-        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
+        <TextBox x:Name="txtĐK_Pass" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
                  Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="352,102,33,284" RenderTransformOrigin="1,0.5" />
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="178,147,315,253" Text="Họ tên"/>
-        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
+        <TextBox x:Name="txtĐK_Name" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
                  Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="176,168,209,218" RenderTransformOrigin="1,0.5" />
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="355,147,122,253" Text="Giới tính"/>
-        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
+        <TextBox x:Name="txtĐK_Sex" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
                  Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="352,168,33,218" RenderTransformOrigin="1,0.5" />
 
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="178,211,292,189" Text="Ngày sinh"/>
-        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
+        <TextBox x:Name="txtĐK_Date" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
                  Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="176,232,209,154" RenderTransformOrigin="1,0.5" />
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="355,211,151,189" Text="SĐT"/>
-        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
+        <TextBox x:Name="txtĐK_Phone" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
                  Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="353,232,32,154" RenderTransformOrigin="1,0.5" />
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="178,274,317,126" Text="Email"/>
-        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
+        <TextBox x:Name="txtĐK_Email" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
                  Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="176,295,209,91" RenderTransformOrigin="1,0.5" />
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="355,274,133,126" Text="Địa chỉ"/>
-        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
+        <TextBox x:Name="txtĐK_Address" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
                  Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="353,295,32,50" RenderTransformOrigin="1,0.5" />
 
         <Button  Style="{StaticResource MaterialDesignFlatMidBgButton}" 
