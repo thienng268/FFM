@@ -26,35 +26,106 @@
         <Image Source="/IMAGE/Asset 3.png" Margin="45,102,335,152"/>
         <!--Mã SP-->
         <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="26" Text="THÊM SẢN PHẨM" Margin="192,35,0,0"/>
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="193,80,-193,-291" Text="Mã sản phẩm"/>
-        <TextBox x:Name="txtĐK_TK" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF" 
-                 Height="25"
-                 BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="193,101,184,248"/>
-        <!--Tên SP-->
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="337,80,-337,-291" Text="Tên sản phẩm"/>
-        <TextBox x:Name="txtĐK_Pass" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF" 
-                 Height="25"
-                 BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="338,101,39,248"/>
-        <!--Giá SP-->
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="193,140,-193,-351" Text="Giá sản phẩm"/>
-        <TextBox x:Name="txtĐK_Name" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF" 
-                 Height="25"
-                 BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="193,161,184,188"/>
-        <!--Loại SP-->
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="337,140,-337,-351" Text="Loại sản phẩm"/>
-        <TextBox x:Name="txtĐK_Sex" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF" 
-                 Height="25"
-                 BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="338,161,39,188"/>
-        <!--Số lượng-->
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="193,196,-193,-407" Text="Số lượng"/>
-        <TextBox x:Name="txtĐK_Date" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF" 
-                 Height="25"
-                 BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="193,217,184,132"/>
-        <!--SĐT-->
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="337,196,-337,-407" Text="Thông tin mô tả"/>
-        <TextBox x:Name="txtĐK_Phone" FontSize="10" FontFamily="{StaticResource mainFont}"  BorderThickness="1" Background="#FFFFFF"
-                 BorderBrush="#C0C6E2" Style="{StaticResource MaterialDesignTextBox}" Margin="338,217,39,86"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="193,80,216,291" Text="Mã sản phẩm"/>
+        <TextBox
+                                Height="30"
+                                Margin="191,99,185,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,1.5,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" />
 
+        <!--Tên SP-->
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="337,80,70,291" Text="Tên sản phẩm"/>
+        <TextBox
+                                Height="30"
+                                Margin="333,99,43,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,1.5,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" />
+
+        <!--Giá SP-->
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="193,140,215,232" Text="Giá sản phẩm"/>
+        <TextBox
+                                Height="30"
+                                Margin="191,159,185,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,1.5,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" />
+
+        <!--Loại SP-->
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="337,140,69,233" Text="Loại sản phẩm"/>
+        <TextBox
+                                Height="30"
+                                Margin="333,159,43,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,1.5,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" />
+
+        <!--Số lượng-->
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="193,196,247,177" Text="Số lượng"/>
+        <TextBox
+                                Height="59"
+                                Margin="333,215,43,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,2,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" />
+
+        <!--SĐT-->
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="337,196,64,179" Text="Thông tin mô tả"/>
+        <TextBox
+                                Height="30"
+                                Margin="191,215,185,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,1.5,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" />
 
         <!--Btn ĐK-->
         <Button x:Name="loginBtn" Style="{StaticResource MaterialDesignFlatMidBgButton}" 

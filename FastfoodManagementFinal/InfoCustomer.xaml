@@ -127,8 +127,8 @@
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="131,276,287,145" Text="Địa chỉ"/>
         <TextBox
-                                Height="70"
-                                Margin="126,295,8,0"
+                                Height="62"
+                                Margin="126,297,8,0"
                                 BorderBrush="#e6ebf7"
                                 Background="White"
                                 Foreground="Black"
