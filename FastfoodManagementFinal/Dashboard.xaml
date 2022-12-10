@@ -105,7 +105,7 @@
         </Button>
 
         <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
-                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,445,9,203">
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,445,9,203" Click="Button_Click_5">
             <WrapPanel Width="170">
                 <Image Source="/IMAGE/data-configuration-512.png"/>
                 <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Thống kê" RenderTransformOrigin="0.906,0.449" Height="22"/>

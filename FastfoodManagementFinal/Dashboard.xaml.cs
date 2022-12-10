@@ -50,5 +50,11 @@ namespace FastfoodManagementFinal
             PagesNavigation.Navigate(new System.Uri("AddProductForm.xaml", UriKind.RelativeOrAbsolute));
 
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            PagesNavigation.Navigate(new System.Uri("StatisticalForm.xaml", UriKind.RelativeOrAbsolute));
+
+        }
     }
 }

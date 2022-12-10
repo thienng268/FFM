@@ -1,0 +1,36 @@
+﻿<Page x:Class="FastfoodManagementFinal.StatisticalForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+ 
+      xmlns:local="clr-namespace:FastfoodManagementFinal"
+      mc:Ignorable="d" 
+      d:DesignHeight="620" d:DesignWidth="807"
+      Title="Product_Form">
+
+    <Grid>
+
+        <TextBlock Foreground="#C6C7E0" FontFamily="{StaticResource boldFont}" FontSize="42" Text="THỐNG KÊ" Margin="42,16,494,553" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="THỐNG KÊ" Margin="38,18,485,547" RenderTransformOrigin="0.845,0.596"/>
+
+
+        <Image Source="/IMAGE/Tổng quan.png" Margin="30,79,499,442" />
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="19" Margin="106,113,577,478" Text="TỔNG QUAN" RenderTransformOrigin="0.467,3"/>
+
+        <Image Source="/IMAGE/Nhân viên năng suất.png" Margin="24,164,493,277" />
+        <Image Source="/IMAGE/Tổng quan.png" Margin="315,79,214,442" />
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="19" Margin="355,111,239,480" Text="LỊCH SỬ KINH DOANH" RenderTransformOrigin="0.467,3"/>
+
+        <Image Source="/IMAGE/Doanh thu với tháng.png" Margin="311,164,206,277" />
+
+        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="36" Margin="61,238,649,322" Text="NV01" RenderTransformOrigin="0.467,3"/>
+        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Margin="61,282,585,300" Text="Trần Thanh Hiền" RenderTransformOrigin="0.467,3"/>
+
+        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="20" Margin="352,261,355,321" Text="8,999,919" RenderTransformOrigin="0.467,3"/>
+
+
+
+    </Grid>
+</Page>
