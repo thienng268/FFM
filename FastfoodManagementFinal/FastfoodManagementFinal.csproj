@@ -157,6 +157,9 @@
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\iSQL_command.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewNV.xaml.cs">
+      <DependentUpon>ViewNV.xaml</DependentUpon>
+    </Compile>
     <Page Include="CartForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -234,6 +237,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewDH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewNV.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
