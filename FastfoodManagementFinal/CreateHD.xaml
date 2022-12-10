@@ -22,31 +22,89 @@
             <ColumnDefinition Width="113*"/>
         </Grid.ColumnDefinitions>
         <Image Source="/IMAGE/Đơn hàng.png" Margin="35,-7,28,-2" Grid.ColumnSpan="2" />
-        <Image Source="/IMAGE/Hóa đơn1.png" Margin="64,20,57,183" Grid.ColumnSpan="2" />
+        <Image Source="/IMAGE/Hóa đơn1.png" Grid.ColumnSpan="2" Margin="60,47,54,242" />
 
-        <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" FontSize="29" Text="HÓA ĐƠN" Margin="218,13,107,390" />
-
-
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="94,77,275,346" Text="Mã NV | Tên NV"/>
-        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="89,98,191,308" RenderTransformOrigin="1,0.5" />
-
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="316,77,27,343" Text="Mã KH | Họ tên KH"/>
-        <TextBox Height="34" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="312,98,81,308" Grid.ColumnSpan="2" />
-
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="94,135,308,286" Text="Thời gian"/>
-        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="89,156,219,250" />
+        <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" FontSize="25" Text="HÓA ĐƠN" Margin="238,13,99,390" />
 
 
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="315,135,108,286" Text="Số HD"/>
-        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="313,156,64,250" />
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="94,64,275,359" Text="Mã NV | Tên NV"/>
+        <TextBox
+                                Height="30"
+                                Margin="92,83,196,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,1.5,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" />
 
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="410,135,82,286" Text="Khuyến mãi" Grid.ColumnSpan="2"/>
-        <TextBox FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="410,156,80,250" Grid.ColumnSpan="2" />
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="316,64,27,356" Text="Mã KH | Họ tên KH"/>
+        <TextBox
+                                Height="30"
+                                Margin="312,83,89,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,1.5,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" Grid.ColumnSpan="2" />
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="94,120,315,301" Text="Thời gian"/>
+        <TextBox
+                                Height="30"
+                                Margin="92,139,196,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,1.5,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" />
+
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="315,120,108,305" Text="Số HD"/>
+        <TextBox
+                                Height="30"
+                                Margin="312,139,73,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,1.5,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" />
+
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="410,120,82,305" Text="Khuyến mãi" Grid.ColumnSpan="2"/>
+        <TextBox
+                                Height="30"
+                                Margin="409,139,89,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,1.5,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" Grid.ColumnSpan="2" />
 
 
 
