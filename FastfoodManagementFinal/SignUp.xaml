@@ -24,38 +24,165 @@
         <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Text="ĐĂNG KÝ" Margin="190,25,0,0" Width="152"/>
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="178,81,255,319" Text="Tên đăng nhập"/>
-        <TextBox x:Name="txtĐK_TK" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="176,102,209,284" RenderTransformOrigin="1,0.5" />
+        <TextBox
+            x:Name="txtĐK_TK"
+                                Width="155"
+                                Height="33"
+                                Margin="175,102,210,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" >
+
+        </TextBox>
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="355,81,78,319" Text="Mật khẩu"/>
-        <TextBox x:Name="txtĐK_Pass" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="352,102,33,284" RenderTransformOrigin="1,0.5" />
+        <TextBox
+            x:Name="txtĐK_Pass"
+                                Width="155"
+                                Height="33"
+                                Margin="350,102,35,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" >
+
+        </TextBox>
+
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="178,147,315,253" Text="Họ tên"/>
-        <TextBox x:Name="txtĐK_Name" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="176,168,209,218" RenderTransformOrigin="1,0.5" />
+        <TextBox
+            x:Name="txtĐK_Name"
+                                Width="155"
+                                Height="33"
+                                Margin="175,168,210,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" >
+
+        </TextBox>
+
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="355,147,122,253" Text="Giới tính"/>
-        <TextBox x:Name="txtĐK_Sex" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="352,168,33,218" RenderTransformOrigin="1,0.5" />
+        <TextBox
+            x:Name="txtĐK_Sex"
+                                Width="155"
+                                Height="33"
+                                Margin="350,168,35,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" >
+
+        </TextBox>
 
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="178,211,292,189" Text="Ngày sinh"/>
-        <TextBox x:Name="txtĐK_Date" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="176,232,209,154" RenderTransformOrigin="1,0.5" />
+        <TextBox
+            x:Name="txtĐK_Date"
+                                Width="155"
+                                Height="33"
+                                Margin="175,232,210,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" >
+
+        </TextBox>
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="355,211,151,189" Text="SĐT"/>
-        <TextBox x:Name="txtĐK_Phone" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="353,232,32,154" RenderTransformOrigin="1,0.5" />
+        <TextBox
+            x:Name="txtĐK_Phone"
+                                Width="155"
+                                Height="33"
+                                Margin="350,232,35,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" >
 
+        </TextBox>
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="178,274,317,126" Text="Email"/>
-        <TextBox x:Name="txtĐK_Email" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="176,295,209,91" RenderTransformOrigin="1,0.5" />
+        <TextBox
+            x:Name="txtĐK_Email"
+                                Width="155"
+                                Height="33"
+                                Margin="175,295,210,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" >
 
+        </TextBox>
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="355,274,133,126" Text="Địa chỉ"/>
-        <TextBox x:Name="txtĐK_Address" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="353,295,32,50" RenderTransformOrigin="1,0.5" />
+        <TextBox
+            x:Name="txtĐK_Address"
+                                Width="155"
+                                Height="46"
+                                Margin="350,295,35,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" >
 
+        </TextBox>
         <Button  Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                   Height="28" materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0" BorderBrush="#EA5C2B" Background="#EA5C2B" FontSize="12" Content="ĐĂNG KÝ" FontFamily="{StaticResource boldFont}" Margin="201,342,235,50"/>
 
