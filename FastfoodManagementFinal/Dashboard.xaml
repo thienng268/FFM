@@ -113,7 +113,7 @@
         </Button>
 
         <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
-                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="35,505,9,143">
+                            Width="195" materialDesign:RippleAssist.Feedback="White" Margin="35,505,0,143" HorizontalAlignment="Left" Click="Button_Click_4" >
             <WrapPanel Width="170">
                 <Image Source="/IMAGE/add-list-256.png"/>
                 <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Nhập hàng" RenderTransformOrigin="0.906,0.449" Height="22"/>

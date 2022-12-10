@@ -99,6 +99,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddProductForm.xaml.cs">
+      <DependentUpon>AddProductForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CartForm.xaml.cs">
       <DependentUpon>CartForm.xaml</DependentUpon>
     </Compile>
@@ -163,6 +166,10 @@
     <Compile Include="ViewPNH.xaml.cs">
       <DependentUpon>ViewPNH.xaml</DependentUpon>
     </Compile>
+    <Page Include="AddProductForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CartForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
