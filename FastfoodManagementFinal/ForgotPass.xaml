@@ -28,9 +28,20 @@
         </Button>
         <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" FontSize="21" Text="QUÊN MẬT KHẨU" Margin="56,36,-56,-36" Grid.RowSpan="2"/>
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="41,39,-41,-296" Text="Tên đăng nhập" Grid.Row="1"/>
-        <TextBox Height="34" FontSize="12" FontFamily="{StaticResource mainFont}" BorderThickness="1" BorderBrush="#e6ebf7"
-                 Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="39,67,40,103" Grid.Row="1" />
-
+        <TextBox
+                                Height="33"
+                                Margin="40,65,41,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Top" CaretBrush="Gray" Grid.Row="1" />
         <!--Btn QUÊN MK-->
         <Button x:Name="QMK_Btn" Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="3" materialDesign:ShadowAssist.ShadowDepth="Depth0"
