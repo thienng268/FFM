@@ -54,7 +54,6 @@
                 Height="48" BorderBrush="#EA5C2B"
                 Background="#EA5C2B" FontSize="14" Content="THÊM" FontFamily="{StaticResource boldFont}" Margin="640,100,62,472"/>
 
-
-
+        
     </Grid>
 </Page>
