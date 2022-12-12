@@ -19,6 +19,13 @@
     <Grid>
         <Image Source="/IMAGE/white.png" />
         <Image Source="/IMAGE/white.png" Margin="10,12,10,8" />
+        <Button HorizontalAlignment="Left" Margin="203,48,0,0" VerticalAlignment="Top" Height="13" Width="13" BorderBrush="#00711B1B">
+            <Button.Background>
+                <ImageBrush ImageSource="IMAGE/x-mark-128.png"/>
+            </Button.Background>
+            <Button Content="Button"/>
+        </Button>
+
         <Image Source="/MON_AN/DESSERT/dessert-534x374px_shake-potato.png" Margin="36,50,37,161" />
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="19" Margin="55,185,55,133" Text="Khoai Tây Lắc"/>
         <Image Source="/IMAGE/Giá.png" Margin="83,216,88,100" />
