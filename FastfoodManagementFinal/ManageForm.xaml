@@ -27,7 +27,7 @@
             <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="QUẢN LÝ" Margin="38,18,492,67" RenderTransformOrigin="0.845,0.596"/>
 
             <!--Bộ lọc-->
-            <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Bộ lọc" Margin="52,76,669,41" RenderTransformOrigin="0.845,0.596"/>
+            <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Bộ lọc" Margin="52,76,669,41" RenderTransformOrigin="0.845,0.596"/>
             <ComboBox
     
     x:Name="BoLocComboBox" FontFamily="{StaticResource boldFont}" Foreground="Black" BorderThickness="1.5" BorderBrush="#e6ebf7" Background="#FFFFFF"
@@ -47,7 +47,7 @@
 
 
             <!--Tìm kiếm-->
-            <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="241,76,455,41" RenderTransformOrigin="0.845,0.596"/>
+            <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="241,76,455,41" RenderTransformOrigin="0.845,0.596"/>
 
             <TextBox
                                 Margin="232,101,321,0"
