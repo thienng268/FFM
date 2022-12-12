@@ -7,28 +7,28 @@
  
       xmlns:local="clr-namespace:FastfoodManagementFinal"
       mc:Ignorable="d" 
-      d:DesignHeight="620" d:DesignWidth="807"
+      d:DesignHeight="580" d:DesignWidth="765"
       Title="Product_Form">
 
-    <Grid>
+    <Grid Height="580" Width="765">
 
-        <TextBlock Foreground="#C6C7E0" FontFamily="{StaticResource boldFont}" FontSize="42" Text="THỐNG KÊ" Margin="42,16,494,553" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="THỐNG KÊ" Margin="38,18,485,547" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="42" Text="THỐNG KÊ" Margin="39,16,497,512" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="THỐNG KÊ" Margin="38,18,485,513" RenderTransformOrigin="0.845,0.596"/>
 
 
-        <Image Source="/IMAGE/Tổng quan.png" Margin="30,79,499,442" />
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="19" Margin="106,113,577,478" Text="TỔNG QUAN" RenderTransformOrigin="0.467,3"/>
+        <Image Source="/IMAGE/Tổng quan.png" Margin="36,79,490,420" />
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="17" Margin="102,105,538,442" Text="TỔNG QUAN" RenderTransformOrigin="0.467,3"/>
 
-        <Image Source="/IMAGE/Nhân viên năng suất.png" Margin="24,164,493,277" />
-        <Image Source="/IMAGE/Tổng quan.png" Margin="315,79,214,442" />
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="19" Margin="355,111,239,480" Text="LỊCH SỬ KINH DOANH" RenderTransformOrigin="0.467,3"/>
+        <Image Source="/IMAGE/Nhân viên năng suất.png" Margin="24,164,480,265" />
+        <Image Source="/IMAGE/Tổng quan.png" Margin="295,79,231,420" />
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="17" Margin="325,105,245,445" Text="LỊCH SỬ KINH DOANH" RenderTransformOrigin="0.467,3"/>
 
-        <Image Source="/IMAGE/Doanh thu với tháng.png" Margin="311,164,206,277" />
+        <Image Source="/IMAGE/Doanh thu với tháng.png" Margin="281,166,220,265" />
 
-        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="36" Margin="61,238,649,322" Text="NV01" RenderTransformOrigin="0.467,3"/>
-        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Margin="61,282,585,300" Text="Trần Thanh Hiền" RenderTransformOrigin="0.467,3"/>
+        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="34" Margin="57,222,614,310" Text="NV01" RenderTransformOrigin="0.467,3"/>
+        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="59,265,582,295" Text="Trần Thanh Hiền" RenderTransformOrigin="0.467,3"/>
 
-        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="20" Margin="352,261,355,321" Text="8,999,919" RenderTransformOrigin="0.467,3"/>
+        <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="20" Margin="326,246,342,305" Text="8,999,919" RenderTransformOrigin="0.467,3"/>
 
 
 

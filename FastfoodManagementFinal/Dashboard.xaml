@@ -98,7 +98,7 @@
         <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="15"
                 Height="48" BorderBrush="#F8FAFF"
-                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content=" QUẢN LÝ" FontFamily="{StaticResource boldFont}" Margin="56,408,196,224" Click="Button_Click_4" Grid.ColumnSpan="2"/>
+                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content=" QUẢN LÝ" FontFamily="{StaticResource boldFont}" Margin="56,408,196,224"  Grid.ColumnSpan="2" Click="Button_Click_4"/>
         <Image Source="/IMAGE/edit-user-256.png" Margin="69,412,138,228" />
 
 

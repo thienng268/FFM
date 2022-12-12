@@ -1,0 +1,185 @@
+﻿<Page x:Class="FastfoodManagementFinal.ManageForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+ 
+      xmlns:local="clr-namespace:FastfoodManagementFinal"
+      mc:Ignorable="d" 
+      d:DesignHeight="580" d:DesignWidth="765"
+      Title="Manage_Form">
+
+    <Page.Resources>
+
+        <Style TargetType="ScrollBar">
+
+        </Style>
+
+
+    </Page.Resources>
+
+    <Grid Height="580" Width="765">
+
+
+        <Grid Height="140" Margin="0,0,0,440">
+            <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="42" Text="QUẢN LÝ" Margin="40,17,485,67" RenderTransformOrigin="0.845,0.596"/>
+            <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="QUẢN LÝ" Margin="38,18,492,67" RenderTransformOrigin="0.845,0.596"/>
+
+            <!--Bộ lọc-->
+            <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Bộ lọc" Margin="52,76,669,41" RenderTransformOrigin="0.845,0.596"/>
+            <ComboBox
+    
+    x:Name="BoLocComboBox" FontFamily="{StaticResource boldFont}" Foreground="Black" BorderThickness="1.5" BorderBrush="#e6ebf7" Background="#FFFFFF"
+    materialDesign:TextFieldAssist.TextBoxViewMargin="8,-10,0,0"
+    IsEnabled="{Binding IsChecked, ElementName=OutlinedComboBoxEnabledCheckBox}"
+    ItemsSource="{Binding ShortStringList}"
+    Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="49,100,605,0" VerticalAlignment="Top" Height="40" >
+                <ComboBoxItem Content="Tất cả"/>
+                <ComboBoxItem Content="Burger"/>
+                <ComboBoxItem Content="Cơm - Mỳ ý"/>
+                <ComboBoxItem Content="Gà rán"/>
+                <ComboBoxItem Content="Thức ăn nhanh"/>
+                <ComboBoxItem Content="Thức uống"/>
+
+            </ComboBox>
+
+
+
+            <!--Tìm kiếm-->
+            <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="241,76,455,41" RenderTransformOrigin="0.845,0.596"/>
+
+            <TextBox
+                                Margin="232,101,321,0"
+                                BorderBrush="#e6ebf7"
+                                Background="White"
+                                Foreground="Black"
+                                FontFamily="{StaticResource mainFont}"
+                                FontSize="12"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,4,0,0"
+                                BorderThickness="2" CaretBrush="Gray" />
+
+            <Image Source="/IMAGE/search-13-48.png" Margin="408,111,333,9" />
+
+            <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                Height="39" BorderBrush="#EA5C2B"
+                Background="#EA5C2B" FontSize="14" Content="TẠO" FontFamily="{StaticResource boldFont}" Margin="627,101,60,0" RenderTransformOrigin="0.397,0.938"/>
+
+
+
+        </Grid>
+
+        <!--Thêm Scroll Viewer-->
+
+        <Grid Margin="0,153,0,7"/>
+        <ScrollViewer Margin="0,153,0,7">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="350"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="350"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="200"/>
+                </Grid.RowDefinitions>
+
+                <Grid Height="170" Width="320" Margin="4,5,6,5" Grid.Column="1">
+                    <Image Source="/IMAGE/Quản lý.png" Margin="-8,-8,-8,-9" />
+                    <Image Source="/IMAGE/Hình Hiền.png" Margin="18,24,208,59" />
+                    <Image Source="/IMAGE/Giá.png" Margin="37,118,234,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="49,122,244,36" Text="NV01"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,33,68,121" Text="Trần Thanh Hiền"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,56,159,98" Text="SĐT:"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,78,159,76" Text="ĐC:"/>
+                    <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,58,79,96" Text="0398285020"/>
+                    <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,80,16,60"><Run Text="KP6, P.Linh Trung, Thủ Đức"/><LineBreak/><Run Text="TP. Hồ Chí Minh"/></TextBlock>
+                    <Image Source="/IMAGE/eye-2-128.png" Margin="282,17,12,133" />
+
+                </Grid>
+
+                <Grid Height="170" Width="320" Margin="4,15,26,15" Grid.Column="3">
+                    <Image Source="/IMAGE/Quản lý.png" Margin="-8,-8,-8,-9" />
+                    <Image Source="/IMAGE/Hình Hiền.png" Margin="18,24,208,59" />
+                    <Image Source="/IMAGE/Giá.png" Margin="37,118,234,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="49,122,244,36" Text="NV01"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,33,68,121" Text="Trần Thanh Hiền"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,56,159,98" Text="SĐT:"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,78,159,76" Text="ĐC:"/>
+                    <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,58,79,96" Text="0398285020"/>
+                    <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,80,16,60"><Run Text="KP6, P.Linh Trung, Thủ Đức"/><LineBreak/><Run Text="TP. Hồ Chí Minh"/></TextBlock>
+                    <Image Source="/IMAGE/eye-2-128.png" Margin="282,17,12,133" />
+
+                </Grid>
+
+                <Grid Height="170" Width="320" Margin="14,15,16,15" Grid.Column="1" Grid.Row="2">
+                    <Image Source="/IMAGE/Quản lý.png" Margin="-8,-8,-8,-9" />
+                    <Image Source="/IMAGE/Hình Hiền.png" Margin="18,24,208,59" />
+                    <Image Source="/IMAGE/Giá.png" Margin="37,118,234,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="49,122,244,36" Text="NV01"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,33,68,121" Text="Trần Thanh Hiền"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,56,159,98" Text="SĐT:"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,78,159,76" Text="ĐC:"/>
+                    <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,58,79,96" Text="0398285020"/>
+                    <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,80,16,60"><Run Text="KP6, P.Linh Trung, Thủ Đức"/><LineBreak/><Run Text="TP. Hồ Chí Minh"/></TextBlock>
+                    <Image Source="/IMAGE/eye-2-128.png" Margin="282,17,12,133" />
+
+                </Grid>
+
+                <Grid Height="170" Width="320" Margin="4,15,26,15" Grid.Column="3" Grid.Row="2">
+                    <Image Source="/IMAGE/Quản lý.png" Margin="-8,-8,-8,-9" />
+                    <Image Source="/IMAGE/Hình Hiền.png" Margin="18,24,208,59" />
+                    <Image Source="/IMAGE/Giá.png" Margin="37,118,234,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="49,122,244,36" Text="NV01"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,33,68,121" Text="Trần Thanh Hiền"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,56,159,98" Text="SĐT:"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,78,159,76" Text="ĐC:"/>
+                    <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,58,79,96" Text="0398285020"/>
+                    <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,80,16,60"><Run Text="KP6, P.Linh Trung, Thủ Đức"/><LineBreak/><Run Text="TP. Hồ Chí Minh"/></TextBlock>
+                    <Image Source="/IMAGE/eye-2-128.png" Margin="282,17,12,133" />
+
+                </Grid>
+
+                <Grid Height="170" Width="320" Margin="14,15,16,15" Grid.Column="1" Grid.Row="4">
+                    <Image Source="/IMAGE/Quản lý.png" Margin="-8,-8,-8,-9" />
+                    <Image Source="/IMAGE/Hình Hiền.png" Margin="18,24,208,59" />
+                    <Image Source="/IMAGE/Giá.png" Margin="37,118,234,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="49,122,244,36" Text="NV01"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,33,68,121" Text="Trần Thanh Hiền"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,56,159,98" Text="SĐT:"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,78,159,76" Text="ĐC:"/>
+                    <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,58,79,96" Text="0398285020"/>
+                    <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,80,16,60"><Run Text="KP6, P.Linh Trung, Thủ Đức"/><LineBreak/><Run Text="TP. Hồ Chí Minh"/></TextBlock>
+                    <Image Source="/IMAGE/eye-2-128.png" Margin="282,17,12,133" />
+
+                </Grid>
+
+                <Grid Height="170" Width="320" Margin="4,15,26,15" Grid.Column="3" Grid.Row="4">
+                    <Image Source="/IMAGE/Quản lý.png" Margin="-8,-8,-8,-9" />
+                    <Image Source="/IMAGE/Hình Hiền.png" Margin="18,24,208,59" />
+                    <Image Source="/IMAGE/Giá.png" Margin="37,118,234,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="49,122,244,36" Text="NV01"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,33,68,121" Text="Trần Thanh Hiền"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,56,159,98" Text="SĐT:"/>
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,78,159,76" Text="ĐC:"/>
+                    <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,58,79,96" Text="0398285020"/>
+                    <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,80,16,60"><Run Text="KP6, P.Linh Trung, Thủ Đức"/><LineBreak/><Run Text="TP. Hồ Chí Minh"/></TextBlock>
+                    <Image Source="/IMAGE/eye-2-128.png" Margin="282,17,12,133" />
+
+                </Grid>
+
+            </Grid>
+
+        </ScrollViewer>
+
+    </Grid>
+</Page>

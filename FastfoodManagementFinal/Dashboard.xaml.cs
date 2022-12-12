@@ -49,10 +49,7 @@ namespace FastfoodManagementFinal
 
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
@@ -63,6 +60,12 @@ namespace FastfoodManagementFinal
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
             PagesNavigation.Navigate(new System.Uri("AddProductForm.xaml", UriKind.RelativeOrAbsolute));
+
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            PagesNavigation.Navigate(new System.Uri("ManageForm.xaml", UriKind.RelativeOrAbsolute));
 
         }
     }
