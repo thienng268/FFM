@@ -7,16 +7,16 @@
  
       xmlns:local="clr-namespace:FastfoodManagementFinal"
       mc:Ignorable="d" 
-      d:DesignHeight="620" d:DesignWidth="807"
+      d:DesignHeight="580" d:DesignWidth="765"
       Title="Product_Form">
 
-    <Grid>
+    <Grid Height="580" Width="765">
 
-        <TextBlock Foreground="#C6C7E0" FontFamily="{StaticResource boldFont}" FontSize="42" Text="NHẬP HÀNG" Margin="42,16,494,553" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="NHẬP HÀNG" Margin="38,18,485,547" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#C6C7E0" FontFamily="{StaticResource boldFont}" FontSize="42" Text="NHẬP HÀNG" Margin="40,12,458,506" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="NHẬP HÀNG" Margin="38,14,465,509" RenderTransformOrigin="0.845,0.596"/>
 
         <!--Tìm kiếm-->
-        <TextBlock Foreground="#3C4048" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="45,78,669,523" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#C6C7E0" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="45,78,632,476" RenderTransformOrigin="0.845,0.596"/>
 
         <TextBox
                                 Height="39"
@@ -33,12 +33,12 @@
                                 BorderThickness="2"
                                 VerticalAlignment="Top" CaretBrush="Gray" />
 
-        <Image Source="/IMAGE/search-13-128.png" Margin="266,112,524,483" />
+        <Image Source="/IMAGE/search-13-48.png" Margin="218,114,523,443" />
 
         <Button x:Name="loginBtn" Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
                 Height="39" BorderBrush="#EA5C2B"
-                Background="#EA5C2B" FontSize="14" Content="NHẬP" FontFamily="{StaticResource boldFont}" Margin="640,104,77,476"/>
+                Background="#EA5C2B" FontSize="14" Content="NHẬP" FontFamily="{StaticResource boldFont}" Margin="640,104,40,437"/>
 
 
 

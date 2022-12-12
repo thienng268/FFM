@@ -27,7 +27,7 @@
             <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>
 
-        <Border CornerRadius="15" Margin="7,3,55,55" Grid.ColumnSpan="5">
+        <Border CornerRadius="15" Margin="39,31,23,27" Grid.ColumnSpan="5">
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#FF9F45" Offset="0"/>
@@ -36,7 +36,7 @@
             </Border.Background>
         </Border>
 
-        <Border CornerRadius="15" Margin="56,38,23,581">
+        <Border CornerRadius="15" Margin="88,66,189,553" Grid.ColumnSpan="2">
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="White" Offset="0"/>
@@ -45,83 +45,83 @@
             </Border.Background>
         </Border>
 
-        <Border CornerRadius="15" Margin="224,9,0,61" Grid.ColumnSpan="5" HorizontalAlignment="Left" Width="794">
+        <Border CornerRadius="15" Margin="17,37,0,33" Grid.ColumnSpan="4" HorizontalAlignment="Left" Width="794" Grid.Column="1">
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="#F8FAFF" Offset="0"/>
-                    <GradientStop Color="#F8FAFF" Offset="0.7"/>
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.7"/>
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
 
-        <Image Source="/IMAGE/Hiền.png" Margin="10,29,151,576" />
+        <Image Source="/IMAGE/Hiền.png" Margin="42,57,119,548" />
 
-        <TextBlock Foreground="#F87D32" FontFamily="{StaticResource boldFont}" FontSize="20" Text="Thanh Hiền" Margin="91,44,24,611" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="#F87D32" FontFamily="{StaticResource boldFont}" FontSize="13" Text="Nhân Viên" Margin="99,72,64,586" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#F87D32" FontFamily="{StaticResource boldFont}" FontSize="20" Text="Thanh Hiền" Margin="123,72,190,583" RenderTransformOrigin="0.845,0.596" Grid.ColumnSpan="2"/>
+        <TextBlock Foreground="#F87D32" FontFamily="{StaticResource boldFont}" FontSize="13" Text="Nhân Viên" Margin="131,100,32,558" RenderTransformOrigin="0.845,0.596"/>
 
-        <Border>
+        <Border Margin="32,28,166,-28" Grid.ColumnSpan="2">
             <Frame x:Name="PagesNavigation" NavigationUIVisibility='Hidden' Margin="240,24,-766,76"/>
         </Border>
-        
-        <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
-                materialDesign:ButtonAssist.CornerRadius="15"
-                Height="48" BorderBrush="#F8FAFF"
-                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content="        TRANG CHỦ" FontFamily="{StaticResource boldFont}" Margin="24,132,30,500" Click="Button_Click"/>
-        <Image Source="/IMAGE/home-4-256.png" Margin="35,135,172,505" />
-
-
 
         <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="15"
                 Height="48" BorderBrush="#F8FAFF"
-                Background="#F8FAFF" Foreground="#EA5C2B" FontSize="16" Content="     SẢN PHẨM" FontFamily="{StaticResource boldFont}" Margin="24,194,30,438" Click="Button_Click_1"/>
-        <Image Source="/IMAGE/restaurant-3-256.png" Margin="33,198,174,442" />
+                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content="        TRANG CHỦ" FontFamily="{StaticResource boldFont}" Margin="56,160,196,472" Click="Button_Click" Grid.ColumnSpan="2"/>
+        <Image Source="/IMAGE/home-4-256.png" Margin="67,163,140,477" />
 
 
 
         <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="15"
                 Height="48" BorderBrush="#F8FAFF"
-                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content="      ĐƠN HÀNG" FontFamily="{StaticResource boldFont}" Margin="24,256,30,376" Click="Button_Click_2"/>
-        <Image Source="/IMAGE/buy-256.png" Margin="35,262,172,378" />
+                Background="#F8FAFF" Foreground="#EA5C2B" FontSize="16" Content="     SẢN PHẨM" FontFamily="{StaticResource boldFont}" Margin="56,222,196,410" Click="Button_Click_1" Grid.ColumnSpan="2"/>
+        <Image Source="/IMAGE/restaurant-3-256.png" Margin="65,226,142,414" />
 
 
 
         <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="15"
                 Height="48" BorderBrush="#F8FAFF"
-                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content="              KHÁCH HÀNG" FontFamily="{StaticResource boldFont}" Margin="24,318,30,314" Click="Button_Click_3"/>
-        <Image Source="/IMAGE/group-256.png" Margin="37,322,170,318" />
+                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content="      ĐƠN HÀNG" FontFamily="{StaticResource boldFont}" Margin="56,284,196,348" Click="Button_Click_2" Grid.ColumnSpan="2"/>
+        <Image Source="/IMAGE/buy-256.png" Margin="67,290,140,350" />
 
 
 
         <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="15"
                 Height="48" BorderBrush="#F8FAFF"
-                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content=" QUẢN LÝ" FontFamily="{StaticResource boldFont}" Margin="24,380,30,252" Click="Button_Click_4"/>
-        <Image Source="/IMAGE/edit-user-256.png" Margin="37,384,170,256" />
+                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content="              KHÁCH HÀNG" FontFamily="{StaticResource boldFont}" Margin="56,346,196,286" Click="Button_Click_3" Grid.ColumnSpan="2"/>
+        <Image Source="/IMAGE/group-256.png" Margin="69,350,138,290" />
 
 
 
         <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="15"
                 Height="48" BorderBrush="#F8FAFF"
-                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content="      THỐNG KÊ" FontFamily="{StaticResource boldFont}" Margin="24,442,30,190" Click="Button_Click_5"/>
-        <Image Source="/IMAGE/data-configuration-256.png" Margin="37,446,170,194" />
+                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content=" QUẢN LÝ" FontFamily="{StaticResource boldFont}" Margin="56,408,196,224" Click="Button_Click_4" Grid.ColumnSpan="2"/>
+        <Image Source="/IMAGE/edit-user-256.png" Margin="69,412,138,228" />
 
 
 
         <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="15"
                 Height="48" BorderBrush="#F8FAFF"
-                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content="           NHẬP HÀNG" FontFamily="{StaticResource boldFont}" Margin="24,504,30,128" Click="Button_Click_6"/>
-        <Image Source="/IMAGE/add-list-256.png" Margin="37,510,170,130" />
+                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content="      THỐNG KÊ" FontFamily="{StaticResource boldFont}" Margin="56,470,196,162" Click="Button_Click_5" Grid.ColumnSpan="2"/>
+        <Image Source="/IMAGE/data-configuration-256.png" Margin="69,474,138,166" />
+
+
+
+        <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="15"
+                Height="48" BorderBrush="#F8FAFF"
+                Background="#F8FAFF" FontSize="16" Foreground="#EA5C2B" Content="           NHẬP HÀNG" FontFamily="{StaticResource boldFont}" Margin="56,532,196,100" Click="Button_Click_6" Grid.ColumnSpan="2"/>
+        <Image Source="/IMAGE/add-list-256.png" Margin="69,538,138,102" />
 
 
 
 
         <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6"
-                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="17,578,64,70">
+                            Width="auto" materialDesign:RippleAssist.Feedback="White" Margin="49,606,32,42">
             <WrapPanel Width="170">
                 <Image Source="/IMAGE/logout-512.png"/>
                 <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="16" Text="   Đăng xuất" RenderTransformOrigin="0.906,0.449" Height="22"/>
