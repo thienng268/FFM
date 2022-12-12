@@ -78,7 +78,7 @@
             <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
                 Height="39" BorderBrush="#EA5C2B"
-                Background="#EA5C2B" FontSize="14" Content="THÊM" FontFamily="{StaticResource boldFont}" Margin="627,101,60,0" RenderTransformOrigin="0.397,0.938"/>
+                Background="#EA5C2B" FontSize="14" Content="THÊM" FontFamily="{StaticResource boldFont}" Margin="627,101,60,0" RenderTransformOrigin="0.397,0.938" Click="Button_Click"/>
 
 
 
@@ -214,7 +214,7 @@
                     <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="38,109,32,61" Text="Khoai Tây Lắc"/>
                     <Image Source="/IMAGE/Giá.png" Margin="32,140,90,29" RenderTransformOrigin="0.556,1.263" />
                     <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="39,145,92,32" Text="35.000"/>
-                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" Click="chitiet7_Click"
                 materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
                 Width="46" Height="22" BorderBrush="#F87D32"
                 Background="#F87D32" Margin="86,140,33,28" RenderTransformOrigin="0.397,0.938"/>

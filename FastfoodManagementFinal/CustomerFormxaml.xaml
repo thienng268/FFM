@@ -25,12 +25,8 @@
     ItemsSource="{Binding ShortStringList}"
     Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="49,100,605,0" VerticalAlignment="Top" Height="40" >
             <ComboBoxItem Content="Tất cả"/>
-            <ComboBoxItem Content="Burger"/>
-            <ComboBoxItem Content="Cơm - Mỳ ý"/>
-            <ComboBoxItem Content="Gà rán"/>
-            <ComboBoxItem Content="Thức ăn nhanh"/>
-            <ComboBoxItem Content="Thức uống"/>
-
+            <ComboBoxItem Content="Tên"/>
+            
         </ComboBox>
         <!--Tìm kiếm-->
         <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="233,76,458,483" RenderTransformOrigin="0.845,0.596"/>
@@ -50,11 +46,7 @@
 
         <Image Source="/IMAGE/search-13-48.png" Margin="401,110,340,447" />
 
-        <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
-                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
-                Height="39" BorderBrush="#EA5C2B"
-                Background="#EA5C2B" FontSize="14" Content="THÊM" FontFamily="{StaticResource boldFont}" Margin="628,101,59,440" RenderTransformOrigin="0.397,0.938"/>
-
+       
 
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Text="Mã KH" Margin="52,155,642,396" RenderTransformOrigin="0.845,0.596"/>
@@ -92,7 +84,7 @@
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="100,15,433,12" Text="Trần Thanh Hiền" Grid.Column="1"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="270,15,305,12" Text="0398285020" Grid.Column="1"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="428,15,108,12" Text="KP6, P. Linh Trung" Grid.Column="1"/>
-                <Button  HorizontalAlignment="Left" Margin="614,14,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1">
+                <Button  HorizontalAlignment="Left" Margin="614,14,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Click="Button_Click">
                     <Button.Background>
                         <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
                     </Button.Background>
@@ -104,7 +96,7 @@
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="100,16,433,11" Text="Trần Thanh Hiền" Grid.Column="1" Grid.Row="2"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="270,16,305,11" Text="0398285020" Grid.Column="1" Grid.Row="2"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="428,16,113,11" Text="KP6, P. Linh Trung" Grid.Column="1" Grid.Row="2"/>
-                <Button  HorizontalAlignment="Left" Margin="614,0,0,0" VerticalAlignment="Center" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="2">
+                <Button  HorizontalAlignment="Left" Margin="614,0,0,0" VerticalAlignment="Center" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="2" Click="Button_Click_1">
                     <Button.Background>
                         <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
                     </Button.Background>
@@ -116,7 +108,7 @@
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="100,17,433,10" Text="Trần Thanh Hiền" Grid.Column="1" Grid.Row="4"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="270,17,305,10" Text="0398285020" Grid.Column="1" Grid.Row="4"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="428,17,108,10" Text="KP6, P. Linh Trung" Grid.Column="1" Grid.Row="4"/>
-                <Button  HorizontalAlignment="Left" Margin="614,0,0,0" VerticalAlignment="Center" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="4">
+                <Button  HorizontalAlignment="Left" Margin="614,0,0,0" VerticalAlignment="Center" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="4" Click="Button_Click_2">
                     <Button.Background>
                         <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
                     </Button.Background>
@@ -128,7 +120,7 @@
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="100,18,433,9" Text="Trần Thanh Hiền" Grid.Column="1" Grid.Row="6"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="270,18,305,9" Text="0398285020" Grid.Column="1" Grid.Row="6"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="428,18,98,9" Text="KP6, P. Linh Trung" Grid.Column="1" Grid.Row="6"/>
-                <Button  HorizontalAlignment="Left" Margin="614,17,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="6">
+                <Button  HorizontalAlignment="Left" Margin="614,17,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="6" Click="Button_Click_3">
                     <Button.Background>
                         <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
                     </Button.Background>
@@ -140,7 +132,7 @@
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="100,19,433,8" Text="Trần Thanh Hiền" Grid.Column="1" Grid.Row="8"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="270,19,305,8" Text="0398285020" Grid.Column="1" Grid.Row="8"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="428,19,113,8" Text="KP6, P. Linh Trung" Grid.Column="1" Grid.Row="8"/>
-                <Button  HorizontalAlignment="Left" Margin="614,18,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="8">
+                <Button  HorizontalAlignment="Left" Margin="614,18,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="8" Click="Button_Click_4">
                     <Button.Background>
                         <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
                     </Button.Background>
@@ -153,7 +145,7 @@
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="270,20,305,7" Text="0398285020" Grid.Column="1" Grid.Row="10"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="428,20,113,7" Text="KP6, P. Linh Trung" Grid.Column="1" Grid.Row="10"/>
 
-                <Button  HorizontalAlignment="Left" Margin="614,20,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="10">
+                <Button  HorizontalAlignment="Left" Margin="614,20,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="10" Click="Button_Click_5">
                     <Button.Background>
                         <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
                     </Button.Background>

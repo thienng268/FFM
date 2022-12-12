@@ -22,6 +22,12 @@
             <ColumnDefinition Width="113*"/>
         </Grid.ColumnDefinitions>
         <Image Source="/IMAGE/Khách hàng.png" Margin="35,-7,28,-2" Grid.ColumnSpan="2" />
+        <Button HorizontalAlignment="Left" Margin="451,9,0,0" VerticalAlignment="Top" Height="19" Width="19" BorderBrush="#00711B1B" Grid.ColumnSpan="2">
+            <Button.Background>
+                <ImageBrush ImageSource="IMAGE/x-mark-128.png"/>
+            </Button.Background>
+            <Button Content="Button"/>
+        </Button>
 
         <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" FontSize="22" Text="THÔNG TIN KHÁCH HÀNG" Margin="151,15,32,391" />
 

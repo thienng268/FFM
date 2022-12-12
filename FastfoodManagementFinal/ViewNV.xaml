@@ -20,6 +20,12 @@
 
         <Image Source="/IMAGE/Thêm nhân viên.png" Margin="35,-5,28,-4" />
         <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" FontSize="29" Text="THÊM NHÂN VIÊN" Margin="170,35,160,372" />
+        <Button HorizontalAlignment="Left" Margin="514,29,0,0" VerticalAlignment="Top" Height="19" Width="19" BorderBrush="#00711B1B">
+            <Button.Background>
+                <ImageBrush ImageSource="IMAGE/x-mark-128.png"/>
+            </Button.Background>
+            <Button Content="Button"/>
+        </Button>
         <Image Source="/IMAGE/Asset 3.png" Margin="40,116,355,203" />
 
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="222,91,262,331" Text="Mã ND"/>

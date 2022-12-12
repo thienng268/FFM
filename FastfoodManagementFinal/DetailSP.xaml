@@ -1,0 +1,35 @@
+﻿<Window x:Class="FastfoodManagementFinal.DetailSP"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FastfoodManagementFinal"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Height="350" 
+        Width="250"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        AllowsTransparency="True"
+        Background="{x:Null}">
+
+
+    <Grid>
+        <Image Source="/IMAGE/white.png" />
+        <Image Source="/IMAGE/white.png" Margin="10,12,10,8" />
+        <Image Source="/MON_AN/DESSERT/dessert-534x374px_shake-potato.png" Margin="36,50,37,161" />
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="19" Margin="55,185,55,133" Text="Khoai Tây Lắc"/>
+        <Image Source="/IMAGE/Giá.png" Margin="83,216,88,100" />
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="13" Margin="100,224,100,109" Text="20.000"/>
+        <!--Loại sản phẩm-->
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="11" Margin="51,255,110,76" Text="Loại sản phẩm:"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="11" Margin="149,255,51,76" Text="ĂN NHẸ"/>
+        <!--Số lượng còn-->
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="11" Margin="51,275,115,51" Text="Số lượng còn:"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="11" Margin="147,274,78,62" Text="100"/>
+
+    </Grid>
+</Window>
+

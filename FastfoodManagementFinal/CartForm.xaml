@@ -11,19 +11,23 @@
       Title="Product_Form">
 
     <Grid Height="580" Width="765">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="122*"/>
+        </Grid.ColumnDefinitions>
 
-        <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="42" Text="ĐƠN HÀNG" Margin="40,16,488,507" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="ĐƠN HÀNG" Margin="38,18,488,508" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="42" Text="ĐƠN HÀNG" Margin="40,16,488,507" RenderTransformOrigin="0.845,0.596" Grid.ColumnSpan="2"/>
+        <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="ĐƠN HÀNG" Margin="38,18,488,508" RenderTransformOrigin="0.845,0.596" Grid.ColumnSpan="2"/>
 
         <!--Bộ lọc-->
-        <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Bộ lọc" Margin="52,76,667,480" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Bộ lọc" Margin="52,76,57,480" RenderTransformOrigin="0.845,0.596"/>
         <ComboBox
     
     x:Name="BoLocComboBox" FontFamily="{StaticResource boldFont}" Foreground="Black" BorderThickness="1.5" BorderBrush="#e6ebf7" Background="#FFFFFF"
     materialDesign:TextFieldAssist.TextBoxViewMargin="8,-10,0,0"
     IsEnabled="{Binding IsChecked, ElementName=OutlinedComboBoxEnabledCheckBox}"
     ItemsSource="{Binding ShortStringList}"
-    Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="49,100,605,0" VerticalAlignment="Top" Height="40" >
+    Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="49,100,605,0" VerticalAlignment="Top" Height="40" Grid.ColumnSpan="2" >
             <ComboBoxItem Content="Họ tên"/>
             <ComboBoxItem Content="Ngày"/>
             <ComboBoxItem Content="SĐT"/>
@@ -31,10 +35,10 @@
 
         </ComboBox>
         <!--Tìm kiếm-->
-        <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="225,76,471,480" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="70,76,471,480" RenderTransformOrigin="0.845,0.596" Grid.Column="1"/>
 
         <TextBox
-                                Margin="220,101,333,440"
+                                Margin="65,101,333,440"
                                 BorderBrush="#e6ebf7"
                                 Background="White"
                                 Foreground="Black"
@@ -44,22 +48,22 @@
                                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                 materialDesign:TextFieldAssist.TextBoxViewMargin="10,4,0,0"
-                                BorderThickness="2" CaretBrush="Gray" />
+                                BorderThickness="2" CaretBrush="Gray" Grid.Column="1" />
 
-        <Image Source="/IMAGE/search-13-48.png" Margin="396,110,345,448" />
+        <Image Source="/IMAGE/search-13-48.png" Margin="241,110,345,448" Grid.Column="1" />
 
         <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
                 Height="39" BorderBrush="#EA5C2B"
-                Background="#EA5C2B" FontSize="20" Content="TẠO" FontFamily="{StaticResource boldFont}" Margin="620,101,60,440"/>
+                Background="#EA5C2B" FontSize="20" Content="TẠO" FontFamily="{StaticResource boldFont}" Margin="465,101,60,440" Grid.Column="1" Click="Button_Click"/>
 
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Text="Mã KH" Margin="52,155,642,396" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Text="Khách hàng" Margin="138,155,502,396" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Text="Ngày" Margin="301,155,411,396" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Text="SĐT" Margin="416,155,310,396" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Text="Trị Giá" Margin="558,155,147,396" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Text="Mã KH" Margin="52,155,32,396" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Text="Khách hàng" Margin="138,155,502,396" RenderTransformOrigin="0.845,0.596" Grid.ColumnSpan="2"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Text="Ngày" Margin="146,155,411,396" RenderTransformOrigin="0.845,0.596" Grid.Column="1"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Text="SĐT" Margin="261,155,310,396" RenderTransformOrigin="0.845,0.596" Grid.Column="1"/>
+        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="16" Text="Trị Giá" Margin="403,155,147,396" RenderTransformOrigin="0.845,0.596" Grid.Column="1"/>
 
-        <ScrollViewer Margin="0,193,0,15">
+        <ScrollViewer Margin="0,193,0,15" Grid.ColumnSpan="2">
 
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -90,7 +94,7 @@
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="261,15,330,12" Text="12/12/2022" Grid.Column="1"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="375,15,200,12" Text="0398285020" Grid.Column="1"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="518,15,73,12" Text="500.000" Grid.Column="1"/>
-                <Button  HorizontalAlignment="Left" Margin="614,14,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1">
+                <Button  HorizontalAlignment="Left" Margin="614,14,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Click="Button_Click_1">
                     <Button.Background>
                         <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
                     </Button.Background>
@@ -103,7 +107,7 @@
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="261,16,330,11" Text="12/12/2022" Grid.Column="1" Grid.Row="2"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="375,16,200,11" Text="0398285020" Grid.Column="1" Grid.Row="2"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="518,16,73,11" Text="500.000" Grid.Column="1" Grid.Row="2"/>
-                <Button  HorizontalAlignment="Left" Margin="614,0,0,0" VerticalAlignment="Center" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="2">
+                <Button  HorizontalAlignment="Left" Margin="614,0,0,0" VerticalAlignment="Center" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="2" Click="Button_Click_2">
                     <Button.Background>
                         <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
                     </Button.Background>
@@ -116,7 +120,7 @@
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="261,17,330,10" Text="12/12/2022" Grid.Column="1" Grid.Row="4"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="375,17,200,10" Text="0398285020" Grid.Column="1" Grid.Row="4"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="518,17,73,10" Text="500.000" Grid.Column="1" Grid.Row="4"/>
-                <Button  HorizontalAlignment="Left" Margin="614,0,0,0" VerticalAlignment="Center" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="4">
+                <Button  HorizontalAlignment="Left" Margin="614,0,0,0" VerticalAlignment="Center" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="4" Click="Button_Click_3">
                     <Button.Background>
                         <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
                     </Button.Background>
@@ -129,7 +133,7 @@
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="261,18,330,9" Text="12/12/2022" Grid.Column="1" Grid.Row="6"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="375,18,200,9" Text="0398285020" Grid.Column="1" Grid.Row="6"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="518,18,73,9" Text="500.000" Grid.Column="1" Grid.Row="6"/>
-                <Button  HorizontalAlignment="Left" Margin="614,17,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="6">
+                <Button  HorizontalAlignment="Left" Margin="614,17,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="6" Click="Button_Click_4">
                     <Button.Background>
                         <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
                     </Button.Background>
@@ -142,7 +146,7 @@
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="261,19,330,8" Text="12/12/2022" Grid.Column="1" Grid.Row="8"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="375,19,200,8" Text="0398285020" Grid.Column="1" Grid.Row="8"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="518,19,73,8" Text="500.000" Grid.Column="1" Grid.Row="8"/>
-                <Button  HorizontalAlignment="Left" Margin="614,18,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="8">
+                <Button  HorizontalAlignment="Left" Margin="614,18,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="8" Click="Button_Click_5">
                     <Button.Background>
                         <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
                     </Button.Background>
@@ -156,7 +160,7 @@
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="375,20,200,7" Text="0398285020" Grid.Column="1" Grid.Row="10"/>
                 <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Margin="518,20,73,7" Text="500.000" Grid.Column="1" Grid.Row="10"/>
 
-                <Button  HorizontalAlignment="Left" Margin="614,20,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="10">
+                <Button  HorizontalAlignment="Left" Margin="614,20,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Grid.Column="1" Grid.Row="10" Click="Button_Click_6">
                     <Button.Background>
                         <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
                     </Button.Background>

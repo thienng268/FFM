@@ -24,5 +24,45 @@ namespace FastfoodManagementFinal
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ViewNV viewNV = new ViewNV();
+            viewNV.ShowDialog();
+        }
+
+        private void eye1_Click(object sender, RoutedEventArgs e)
+        {
+            InfoNV infoNV = new InfoNV();
+            infoNV.ShowDialog();
+        }
+
+        private void eye2_Click(object sender, RoutedEventArgs e)
+        {
+            InfoNV infoNV = new InfoNV();
+            infoNV.ShowDialog();
+        }
+
+        private void eye3_Click(object sender, RoutedEventArgs e)
+        {
+            InfoNV infoNV = new InfoNV();
+            infoNV.ShowDialog();
+        }
+
+        private void eye4_Click(object sender, RoutedEventArgs e)
+        {
+            InfoNV infoNV = new InfoNV();
+            infoNV.ShowDialog();
+        }
+        private void eye5_Click(object sender, RoutedEventArgs e)
+        {
+            InfoNV infoNV = new InfoNV();
+            infoNV.ShowDialog();
+        }
+        private void eye6_Click(object sender, RoutedEventArgs e)
+        {
+            InfoNV infoNV = new InfoNV();
+            infoNV.ShowDialog();
+        }
     }
 }

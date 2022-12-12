@@ -24,5 +24,18 @@ namespace FastfoodManagementFinal
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NewProduct NewProduct = new NewProduct();
+            NewProduct.ShowDialog();
+           
+        }
+
+        private void chitiet7_Click(object sender, RoutedEventArgs e)
+        {
+            DetailSP detailSP = new DetailSP();
+            detailSP.ShowDialog();
+        }
     }
 }

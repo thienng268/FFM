@@ -36,12 +36,8 @@
     ItemsSource="{Binding ShortStringList}"
     Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="49,100,605,0" VerticalAlignment="Top" Height="40" >
                 <ComboBoxItem Content="Tất cả"/>
-                <ComboBoxItem Content="Burger"/>
-                <ComboBoxItem Content="Cơm - Mỳ ý"/>
-                <ComboBoxItem Content="Gà rán"/>
-                <ComboBoxItem Content="Thức ăn nhanh"/>
-                <ComboBoxItem Content="Thức uống"/>
-
+                <ComboBoxItem Content="Tên"/>
+                
             </ComboBox>
 
 
@@ -67,7 +63,7 @@
             <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
                 Height="39" BorderBrush="#EA5C2B"
-                Background="#EA5C2B" FontSize="14" Content="TẠO" FontFamily="{StaticResource boldFont}" Margin="627,101,60,0" RenderTransformOrigin="0.397,0.938"/>
+                Background="#EA5C2B" FontSize="14" Content="THÊM" FontFamily="{StaticResource boldFont}" Margin="627,101,60,0" RenderTransformOrigin="0.397,0.938" Click="Button_Click"/>
 
 
 
@@ -103,8 +99,13 @@
                     <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,78,159,76" Text="ĐC:"/>
                     <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,58,79,96" Text="0398285020"/>
                     <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,80,16,60"><Run Text="KP6, P.Linh Trung, Thủ Đức"/><LineBreak/><Run Text="TP. Hồ Chí Minh"/></TextBlock>
-                    <Image Source="/IMAGE/eye-2-128.png" Margin="282,17,12,133" />
+                    <Button  HorizontalAlignment="Left" Margin="278,16,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Click="eye1_Click">
 
+                        <Button.Background>
+                            <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
+                        </Button.Background>
+                        <Button Content="Button"/>
+                    </Button>
                 </Grid>
 
                 <Grid Height="170" Width="320" Margin="4,15,26,15" Grid.Column="3">
@@ -117,8 +118,12 @@
                     <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,78,159,76" Text="ĐC:"/>
                     <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,58,79,96" Text="0398285020"/>
                     <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,80,16,60"><Run Text="KP6, P.Linh Trung, Thủ Đức"/><LineBreak/><Run Text="TP. Hồ Chí Minh"/></TextBlock>
-                    <Image Source="/IMAGE/eye-2-128.png" Margin="282,17,12,133" />
-
+                    <Button  HorizontalAlignment="Left" Margin="276,16,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Click="eye2_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
+                        </Button.Background>
+                        <Button Content="Button"/>
+                    </Button>
                 </Grid>
 
                 <Grid Height="170" Width="320" Margin="14,15,16,15" Grid.Column="1" Grid.Row="2">
@@ -131,8 +136,12 @@
                     <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,78,159,76" Text="ĐC:"/>
                     <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,58,79,96" Text="0398285020"/>
                     <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,80,16,60"><Run Text="KP6, P.Linh Trung, Thủ Đức"/><LineBreak/><Run Text="TP. Hồ Chí Minh"/></TextBlock>
-                    <Image Source="/IMAGE/eye-2-128.png" Margin="282,17,12,133" />
-
+                    <Button  HorizontalAlignment="Left" Margin="278,16,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Click="eye3_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
+                        </Button.Background>
+                        <Button Content="Button"/>
+                    </Button>
                 </Grid>
 
                 <Grid Height="170" Width="320" Margin="4,15,26,15" Grid.Column="3" Grid.Row="2">
@@ -145,8 +154,12 @@
                     <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,78,159,76" Text="ĐC:"/>
                     <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,58,79,96" Text="0398285020"/>
                     <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,80,16,60"><Run Text="KP6, P.Linh Trung, Thủ Đức"/><LineBreak/><Run Text="TP. Hồ Chí Minh"/></TextBlock>
-                    <Image Source="/IMAGE/eye-2-128.png" Margin="282,17,12,133" />
-
+                    <Button  HorizontalAlignment="Left" Margin="276,16,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Click="eye4_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
+                        </Button.Background>
+                        <Button Content="Button"/>
+                    </Button>
                 </Grid>
 
                 <Grid Height="170" Width="320" Margin="14,15,16,15" Grid.Column="1" Grid.Row="4">
@@ -159,8 +172,12 @@
                     <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,78,159,76" Text="ĐC:"/>
                     <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,58,79,96" Text="0398285020"/>
                     <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,80,16,60"><Run Text="KP6, P.Linh Trung, Thủ Đức"/><LineBreak/><Run Text="TP. Hồ Chí Minh"/></TextBlock>
-                    <Image Source="/IMAGE/eye-2-128.png" Margin="282,17,12,133" />
-
+                    <Button  HorizontalAlignment="Left" Margin="278,16,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Click="eye5_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
+                        </Button.Background>
+                        <Button Content="Button"/>
+                    </Button>
                 </Grid>
 
                 <Grid Height="170" Width="320" Margin="4,15,26,15" Grid.Column="3" Grid.Row="4">
@@ -173,8 +190,12 @@
                     <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="127,78,159,76" Text="ĐC:"/>
                     <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,58,79,96" Text="0398285020"/>
                     <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="10" Margin="162,80,16,60"><Run Text="KP6, P.Linh Trung, Thủ Đức"/><LineBreak/><Run Text="TP. Hồ Chí Minh"/></TextBlock>
-                    <Image Source="/IMAGE/eye-2-128.png" Margin="282,17,12,133" />
-
+                    <Button  HorizontalAlignment="Left" Margin="274,16,0,0" VerticalAlignment="Top" Height="24" Width="28" BorderBrush="#00711B1B" RenderTransformOrigin="4.667,1.717" Click="eye6_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/IMAGE/eye-2-128.png"/>
+                        </Button.Background>
+                        <Button Content="Button"/>
+                    </Button>
                 </Grid>
 
             </Grid>
