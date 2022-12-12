@@ -24,7 +24,5 @@ namespace FastfoodManagementFinal
         {
             InitializeComponent();
         }
-
-        
     }
 }

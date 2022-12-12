@@ -10,47 +10,58 @@
       d:DesignHeight="580" d:DesignWidth="765"
       Title="Product_Form">
 
+    <Page.Resources>
+
+        <Style TargetType="ScrollBar">
+
+        </Style>
+
+
+    </Page.Resources>
+
     <Grid Height="580" Width="765">
 
-        <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="42" Text="SẢN PHẨM" Margin="40,16,488,507" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="SẢN PHẨM" Margin="38,18,488,508" RenderTransformOrigin="0.845,0.596"/>
 
-        <!--Bộ lọc-->
-        <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Bộ lọc" Margin="52,76,669,485" RenderTransformOrigin="0.845,0.596"/>
-        <ComboBox
+        <Grid Height="140" Margin="0,0,0,440">
+            <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="42" Text="SẢN PHẨM" Margin="40,17,485,67" RenderTransformOrigin="0.845,0.596"/>
+            <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="SẢN PHẨM" Margin="38,18,492,67" RenderTransformOrigin="0.845,0.596"/>
+
+            <!--Bộ lọc-->
+            <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Bộ lọc" Margin="52,76,669,41" RenderTransformOrigin="0.845,0.596"/>
+            <ComboBox
     
     x:Name="BoLocComboBox" FontFamily="{StaticResource boldFont}" Foreground="Black" BorderThickness="1.5" BorderBrush="#e6ebf7" Background="#FFFFFF"
     materialDesign:TextFieldAssist.TextBoxViewMargin="8,-10,0,0"
     IsEnabled="{Binding IsChecked, ElementName=OutlinedComboBoxEnabledCheckBox}"
     ItemsSource="{Binding ShortStringList}"
     Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="49,100,605,0" VerticalAlignment="Top" Height="40" >
-            <ComboBoxItem Content="Tất cả"/>
-            <ComboBoxItem Content="Burger"/>
-            <ComboBoxItem Content="Cơm - Mỳ ý"/>
-            <ComboBoxItem Content="Gà rán"/>
-            <ComboBoxItem Content="Thức ăn nhanh"/>
-            <ComboBoxItem Content="Thức uống"/>
+                <ComboBoxItem Content="Tất cả"/>
+                <ComboBoxItem Content="Burger"/>
+                <ComboBoxItem Content="Cơm - Mỳ ý"/>
+                <ComboBoxItem Content="Gà rán"/>
+                <ComboBoxItem Content="Thức ăn nhanh"/>
+                <ComboBoxItem Content="Thức uống"/>
 
-        </ComboBox>
+            </ComboBox>
 
-        <!--Sắp xếp-->
-        <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Sắp xếp" Margin="198,76,504,480" RenderTransformOrigin="0.845,0.596"/>
-        <ComboBox
+            <!--Sắp xếp-->
+            <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Sắp xếp" Margin="198,76,504,46" RenderTransformOrigin="0.845,0.596"/>
+            <ComboBox
     
     x:Name="SapXepComboBox" FontFamily="{StaticResource boldFont}" Foreground="Black" BorderThickness="1.5" BorderBrush="#e6ebf7" Background="#FFFFFF"
     materialDesign:TextFieldAssist.TextBoxViewMargin="8,-10,0,0"
     IsEnabled="{Binding IsChecked, ElementName=OutlinedComboBoxEnabledCheckBox}"
     ItemsSource="{Binding ShortStringList}"
-    Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="193,100,461,440" VerticalAlignment="Stretch" >
-            <ComboBoxItem Content="Tên"/>
-            <ComboBoxItem Content="Giá"/>
-        </ComboBox>
+    Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="193,100,461,0" VerticalAlignment="Stretch" >
+                <ComboBoxItem Content="Tên"/>
+                <ComboBoxItem Content="Giá"/>
+            </ComboBox>
 
-        <!--Tìm kiếm-->
-        <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="349,76,347,483" RenderTransformOrigin="0.845,0.596"/>
+            <!--Tìm kiếm-->
+            <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="349,76,347,41" RenderTransformOrigin="0.845,0.596"/>
 
-        <TextBox
-                                Margin="340,101,213,440"
+            <TextBox
+                                Margin="340,101,213,0"
                                 BorderBrush="#e6ebf7"
                                 Background="White"
                                 Foreground="Black"
@@ -62,19 +73,241 @@
                                 materialDesign:TextFieldAssist.TextBoxViewMargin="10,4,0,0"
                                 BorderThickness="2" CaretBrush="Gray" />
 
-        <Image Source="/IMAGE/search-13-48.png" Margin="516,110,225,447" />
+            <Image Source="/IMAGE/search-13-48.png" Margin="516,111,225,9" />
 
-        <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+            <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
                 Height="39" BorderBrush="#EA5C2B"
-                Background="#EA5C2B" FontSize="14" Content="THÊM" FontFamily="{StaticResource boldFont}" Margin="628,101,59,440" RenderTransformOrigin="0.397,0.938"/>
+                Background="#EA5C2B" FontSize="14" Content="THÊM" FontFamily="{StaticResource boldFont}" Margin="627,101,60,0" RenderTransformOrigin="0.397,0.938"/>
 
-    <!--Thêm Scroll Viewer-->
-        <ScrollViewer Grid.Row="1">
-            
-            
-            
+
+
+        </Grid>
+
+
+
+
+
+
+
+        <!--Thêm Scroll Viewer-->
+
+
+
+        <Grid Margin="0,153,0,7"/>
+        <ScrollViewer Margin="0,153,0,7">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="170"/>
+                    <ColumnDefinition Width="170"/>
+                    <ColumnDefinition Width="170"/>
+                    <ColumnDefinition Width="170"/>
+                    <ColumnDefinition Width="170"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+
+                </Grid.RowDefinitions>
+
+                <Grid Height="190" Width="165" Margin="0,3,5,7" Grid.Column="1">
+                    <Image Source="/IMAGE/white.png" Margin="2,-2,2,-9" />
+                    <Image Source="/IMAGE/white.png" Margin="8,9,8,1" />
+                    <Image Source="/IMAGE/burger_bulgogi-burger.png" Margin="22,17,24,80" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="36,109,24,60" Text="Burger Bulgogi"/>
+                    <Image Source="/IMAGE/Giá.png" Margin="32,140,90,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="39,145,92,32" Text="45.000"/>
+                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                Width="46" Height="22" BorderBrush="#F87D32"
+                Background="#F87D32" Margin="86,140,33,28" RenderTransformOrigin="0.397,0.938"/>
+                    <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="94,145,37,32" Text="chi tiết"/>
+
+                </Grid>
+
+                <Grid Height="190" Width="165" Margin="2,3,3,7" Grid.Column="2">
+                    <Image Source="/IMAGE/white.png" Margin="2,-2,2,-9" />
+                    <Image Source="/IMAGE/white.png" Margin="8,9,8,1" />
+                    <Image Source="/MON_AN/BURGER/burger_shrimp-burger_1.png" Margin="22,17,24,80" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="46,109,32,59" Text="Burger Tôm"/>
+                    <Image Source="/IMAGE/Giá.png" Margin="32,140,90,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="39,145,92,32" Text="48.000"/>
+                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                Width="46" Height="22" BorderBrush="#F87D32"
+                Background="#F87D32" Margin="86,140,33,28" RenderTransformOrigin="0.397,0.938"/>
+                    <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="94,145,37,32" Text="chi tiết"/>
+
+                </Grid>
+
+                <Grid Height="190" Width="165" Margin="2,3,3,7" Grid.Column="3">
+                    <Image Source="/IMAGE/white.png" Margin="2,-2,2,-9" />
+                    <Image Source="/IMAGE/white.png" Margin="8,9,8,1" />
+                    <Image Source="/MON_AN/CHICKEN/goldensnow-chicken.png" Margin="30,21,30,86" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="38,109,32,61" Text="Gà Tuyết Vàng"/>
+                    <Image Source="/IMAGE/Giá.png" Margin="32,140,90,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="39,145,92,32" Text="115.000"/>
+                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                Width="46" Height="22" BorderBrush="#F87D32"
+                Background="#F87D32" Margin="86,140,33,28" RenderTransformOrigin="0.397,0.938"/>
+                    <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="94,145,37,32" Text="chi tiết"/>
+
+                </Grid>
+
+                <Grid Height="190" Width="165" Margin="1,3,4,7" Grid.Column="4">
+                    <Image Source="/IMAGE/white.png" Margin="2,-2,2,-9" />
+                    <Image Source="/IMAGE/white.png" Margin="8,9,8,1" />
+                    <Image Source="/MON_AN/RICE_NOODLE/rice-spaghetti.png" Margin="30,21,30,86" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="44,109,26,61" Text="Mỳ Ý Bò Bằm"/>
+                    <Image Source="/IMAGE/Giá.png" Margin="32,140,90,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="41,145,90,32" Text="31.000"/>
+                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                Width="46" Height="22" BorderBrush="#F87D32"
+                Background="#F87D32" Margin="86,140,33,28" RenderTransformOrigin="0.397,0.938"/>
+                    <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="94,145,37,32" Text="chi tiết"/>
+
+                </Grid>
+
+                <Grid Height="190" Width="165" Margin="0,7,5,3" Grid.Column="1" Grid.Row="1">
+                    <Image Source="/IMAGE/white.png" Margin="2,-2,2,-9" />
+                    <Image Source="/IMAGE/white.png" Margin="8,9,8,1" />
+                    <Image Source="/MON_AN/RICE_NOODLE/rice-spaghetti-534x374px._com-gavien_1.png" Margin="28,23,30,90" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="42,109,34,60" Text="Cơm Gà Viên"/>
+                    <Image Source="/IMAGE/Giá.png" Margin="32,140,90,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="39,145,92,32" Text="45.000"/>
+                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                Width="46" Height="22" BorderBrush="#F87D32"
+                Background="#F87D32" Margin="86,140,33,28" RenderTransformOrigin="0.397,0.938"/>
+                    <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="94,145,37,32" Text="chi tiết"/>
+
+                </Grid>
+
+                <Grid Height="190" Width="165" Margin="2,8,3,2" Grid.Column="2" Grid.Row="1">
+                    <Image Source="/IMAGE/white.png" Margin="2,-2,2,-9" />
+                    <Image Source="/IMAGE/white.png" Margin="8,9,8,1" />
+                    <Image Source="/MON_AN/RICE_NOODLE/rice-spaghetti-534x374px._com-gasoth_s.png" Margin="22,24,20,89" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="37,109,28,59" Text="Cơm Gà Sốt HS"/>
+                    <Image Source="/IMAGE/Giá.png" Margin="32,140,90,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="39,145,92,32" Text="48.000"/>
+                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                Width="46" Height="22" BorderBrush="#F87D32"
+                Background="#F87D32" Margin="86,140,33,28" RenderTransformOrigin="0.397,0.938"/>
+                    <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="94,145,37,32" Text="chi tiết"/>
+
+                </Grid>
+
+                <Grid Height="190" Width="165" Margin="2,9,3,1" Grid.Column="3" Grid.Row="1">
+                    <Image Source="/IMAGE/white.png" Margin="2,-2,2,-9" />
+                    <Image Source="/IMAGE/white.png" Margin="8,9,8,1" />
+                    <Image Source="/MON_AN/DESSERT/dessert-534x374px_shake-potato.png" Margin="31,25,35,90" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="38,109,32,61" Text="Khoai Tây Lắc"/>
+                    <Image Source="/IMAGE/Giá.png" Margin="32,140,90,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="39,145,92,32" Text="35.000"/>
+                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                Width="46" Height="22" BorderBrush="#F87D32"
+                Background="#F87D32" Margin="86,140,33,28" RenderTransformOrigin="0.397,0.938"/>
+                    <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="94,145,37,32" Text="chi tiết"/>
+
+                </Grid>
+
+                <Grid Height="190" Width="165" Margin="1,9,4,1" Grid.Column="4" Grid.Row="1">
+                    <Image Source="/IMAGE/white.png" Margin="2,-2,2,-9" />
+                    <Image Source="/IMAGE/white.png" Margin="8,9,8,1" />
+                    <Image Source="/MON_AN/DRINK/drink-534x374px_tornado-chocolate.png" Margin="29,13,30,85" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="32,109,33,61" Text="Latte Chocolate"/>
+                    <Image Source="/IMAGE/Giá.png" Margin="32,140,90,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="41,145,90,32" Text="25.000"/>
+                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                Width="46" Height="22" BorderBrush="#F87D32"
+                Background="#F87D32" Margin="86,140,33,28" RenderTransformOrigin="0.397,0.938"/>
+                    <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="94,145,37,32" Text="chi tiết"/>
+
+                </Grid>
+
+                <Grid Height="190" Width="165" Margin="0,9,5,1" Grid.Column="1" Grid.Row="2">
+                    <Image Source="/IMAGE/white.png" Margin="2,-2,2,-9" />
+                    <Image Source="/IMAGE/white.png" Margin="8,9,8,1" />
+                    <Image Source="/MON_AN/DRINK/drink-534x374px._7upmelonpeach.png" Margin="29,13,30,85" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="52,109,2,57" Text="7 Up Dừa"/>
+                    <Image Source="/IMAGE/Giá.png" Margin="32,140,90,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="39,145,92,32" Text="25.000"/>
+                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                Width="46" Height="22" BorderBrush="#F87D32"
+                Background="#F87D32" Margin="86,140,33,28" RenderTransformOrigin="0.397,0.938"/>
+                    <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="94,145,37,32" Text="chi tiết"/>
+
+                </Grid>
+
+                <Grid Height="190" Width="165" Margin="2,8,3,2" Grid.Column="2" Grid.Row="2">
+                    <Image Source="/IMAGE/white.png" Margin="2,-2,2,-9" />
+                    <Image Source="/IMAGE/white.png" Margin="8,9,8,1" />
+                    <Image Source="/MON_AN/BURGER/burger_beef-teriyaki-burger.png" Margin="22,17,24,80" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="33,109,18,51" Text="Burger Teriyaki "/>
+                    <Image Source="/IMAGE/Giá.png" Margin="32,140,90,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="39,145,92,32" Text="48.000"/>
+                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                Width="46" Height="22" BorderBrush="#F87D32"
+                Background="#F87D32" Margin="86,140,33,28" RenderTransformOrigin="0.397,0.938"/>
+                    <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="94,145,37,32" Text="chi tiết"/>
+
+                </Grid>
+
+                <Grid Height="190" Width="165" Margin="2,9,3,1" Grid.Column="3" Grid.Row="2">
+                    <Image Source="/IMAGE/white.png" Margin="2,-2,2,-9" />
+                    <Image Source="/IMAGE/white.png" Margin="8,9,8,1" />
+                    <Image Source="/MON_AN/DESSERT/dessert-534x374px_squid-ring_2.png" Margin="31,25,35,90" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="38,109,32,61" Text="Mực Rán Vòng"/>
+                    <Image Source="/IMAGE/Giá.png" Margin="32,140,90,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="39,145,92,32" Text="35.000"/>
+                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                Width="46" Height="22" BorderBrush="#F87D32"
+                Background="#F87D32" Margin="86,140,33,28" RenderTransformOrigin="0.397,0.938"/>
+                    <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="94,145,37,32" Text="chi tiết"/>
+
+                </Grid>
+
+                <Grid Height="190" Width="165" Margin="1,9,4,1" Grid.Column="4" Grid.Row="2">
+                    <Image Source="/IMAGE/white.png" Margin="2,-2,2,-9" />
+                    <Image Source="/IMAGE/white.png" Margin="8,9,8,1" />
+                    <Image Source="/MON_AN/DESSERT/dessert-534x374px_shake-chicken.png" Margin="31,25,35,90" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="60,109,5,61" Text="Gà Lắc"/>
+                    <Image Source="/IMAGE/Giá.png" Margin="32,140,90,29" RenderTransformOrigin="0.556,1.263" />
+                    <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="41,145,90,32" Text="40.000"/>
+                    <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
+                materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                Width="46" Height="22" BorderBrush="#F87D32"
+                Background="#F87D32" Margin="86,140,33,28" RenderTransformOrigin="0.397,0.938"/>
+                    <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="8" Margin="94,145,37,32" Text="chi tiết"/>
+
+                </Grid>
+
+
+
+
+
+
+
+
+
+            </Grid>
+
         </ScrollViewer>
-        
+
     </Grid>
 </Page>

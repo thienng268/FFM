@@ -12,11 +12,11 @@
 
     <Grid Height="580" Width="765">
 
-        <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="42" Text="ĐƠN HÀNG" Margin="40,17,485,507" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="ĐƠN HÀNG" Margin="38,18,492,503" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="42" Text="ĐƠN HÀNG" Margin="40,16,488,507" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="ĐƠN HÀNG" Margin="38,18,488,508" RenderTransformOrigin="0.845,0.596"/>
 
         <!--Bộ lọc-->
-        <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Bộ lọc" Margin="52,76,667,481" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Bộ lọc" Margin="52,76,667,40" RenderTransformOrigin="0.845,0.596"/>
         <ComboBox
     
     x:Name="BoLocComboBox" FontFamily="{StaticResource boldFont}" Foreground="Black" BorderThickness="1.5" BorderBrush="#e6ebf7" Background="#FFFFFF"
@@ -31,7 +31,7 @@
 
         </ComboBox>
         <!--Tìm kiếm-->
-        <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="225,76,471,483" RenderTransformOrigin="0.845,0.596"/>
+        <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Tìm kiếm" Margin="225,76,471,40" RenderTransformOrigin="0.845,0.596"/>
 
         <TextBox
                                 Margin="220,101,333,440"
@@ -46,23 +46,12 @@
                                 materialDesign:TextFieldAssist.TextBoxViewMargin="10,4,0,0"
                                 BorderThickness="2" CaretBrush="Gray" />
 
-        <Image Source="/IMAGE/search-13-48.png" Margin="396,110,345,447" />
+        <Image Source="/IMAGE/search-13-48.png" Margin="396,110,345,448" />
 
         <Button Style="{StaticResource MaterialDesignFlatMidBgButton}" 
                 materialDesign:ButtonAssist.CornerRadius="10" materialDesign:ShadowAssist.ShadowDepth="Depth0"
                 Height="39" BorderBrush="#EA5C2B"
-                Background="#EA5C2B" FontSize="20" Content="TẠO" FontFamily="{StaticResource boldFont}" Margin="625,101,55,440"/>
-
-
-
-
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="18" Text="STT" Margin="52,189,681,367" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="18" Text="Khách hàng" Margin="118,189,528,362" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="18" Text="Ngày" Margin="323,189,395,367" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="18" Text="SĐT" Margin="468,189,254,367" RenderTransformOrigin="0.845,0.596"/>
-        <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="18" Text="Trị giá" Margin="609,189,96,367" RenderTransformOrigin="0.845,0.596"/>
-
-
+                Background="#EA5C2B" FontSize="20" Content="TẠO" FontFamily="{StaticResource boldFont}" Margin="620,101,60,440"/>
 
 
 
