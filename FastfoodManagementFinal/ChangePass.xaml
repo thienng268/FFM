@@ -21,7 +21,12 @@
         </Grid.RowDefinitions>
 
         <Image Source="/IMAGE/Đổi MK.png" Margin="-17,-4,-17,-9" Grid.RowSpan="2" />
-
+        <Button HorizontalAlignment="Left" Margin="259,13,0,0" VerticalAlignment="Top" Height="19" Width="19" BorderBrush="#00711B1B">
+            <Button.Background>
+                <ImageBrush ImageSource="IMAGE/x-mark-128.png"/>
+            </Button.Background>
+            <Button Content="Button"/>
+        </Button>
 
         <TextBlock Foreground="#FF6633" FontFamily="{StaticResource boldFont}" FontSize="21" Text="ĐỔI MẬT KHẨU" Margin="59,20,51,20"/>
         <TextBlock Foreground="Black" FontFamily="{StaticResource boldFont}" FontSize="12" Margin="34,57,136,321" Text="Nhập mật khẩu cũ" Grid.RowSpan="2"/>

@@ -14,7 +14,11 @@
 
         <TextBlock Foreground="#C6C7E0" FontFamily="{StaticResource boldFont}" FontSize="45" Text="TRANG CHỦ" Margin="39,16,249,500" RenderTransformOrigin="0.845,0.596"/>
         <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="45" Text="TRANG CHỦ" Margin="38,18,450,508" RenderTransformOrigin="0.845,0.596"/>
-
+        <Button HorizontalAlignment="Left" Margin="670,19,0,0" VerticalAlignment="Top" Height="31" Width="34" BorderBrush="#00711B1B" Click="Setting_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/IMAGE/settings-16-128.png"/>
+            </Button.Background>
+        </Button>
         <Image Source="/IMAGE/Số đơn bán ra.png" Margin="20,97,538,350" />
         <TextBlock Foreground="White" FontFamily="{StaticResource boldFont}" FontSize="45" Text="0" Margin="140,148,592,374" RenderTransformOrigin="0.845,0.596"/>
 

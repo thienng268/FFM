@@ -14,7 +14,11 @@
 
         <TextBlock Foreground="#e6ebf7" FontFamily="{StaticResource boldFont}" FontSize="42" Text="KHÁCH HÀNG" Margin="40,17,415,507" RenderTransformOrigin="0.845,0.596"/>
         <TextBlock Foreground="#EA5C2B" FontFamily="{StaticResource boldFont}" FontSize="42" Text="KHÁCH HÀNG" Margin="38,18,436,508" RenderTransformOrigin="0.845,0.596"/>
-
+        <Button HorizontalAlignment="Left" Margin="670,19,0,0" VerticalAlignment="Top" Height="31" Width="34" BorderBrush="#00711B1B" Click="Setting_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/IMAGE/settings-16-128.png"/>
+            </Button.Background>
+        </Button>
         <!--Bộ lọc-->
         <TextBlock Foreground="#9B9CA3" FontFamily="{StaticResource boldFont}" FontSize="14" Text="Bộ lọc" Margin="52,76,667,483" RenderTransformOrigin="0.845,0.596"/>
         <ComboBox
@@ -42,7 +46,7 @@
                                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                 materialDesign:TextFieldAssist.TextBoxViewMargin="10,4,0,0"
-                                BorderThickness="2" CaretBrush="Gray" />
+                                BorderThickness="2" CaretBrush="#e6ebf7" />
 
         <Image Source="/IMAGE/search-13-48.png" Margin="401,110,340,447" />
 
